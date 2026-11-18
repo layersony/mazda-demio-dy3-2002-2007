@@ -1,0 +1,72 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.2.1206">
+    <meta name="TEMPLATEBASE" content="Simple HTML">
+    <meta name="LASTUPDATED" content="04/12/05 21:12:52">
+    <title>GENERATOR CONTROL OPERATION [ZY]</title>
+  </head>
+
+  <body link="#3366CC" vlink="#9999CC" text="#000000" alink="#0000CC" bgcolor="#FFFFFF">
+<a name="wp1025486"> </a><h1><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="5"><b>
+GENERATOR CONTROL OPERATION [ZY]
+</b></font></div></h1>
+<hr>
+
+<a name="wp1058563"> </a><p><div align="right"><font color="#000000" face="Arial" size="2">
+id0140001725c0
+</font></div></p>
+
+<a name="wp1059192"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Determination of Field Coil Excitation Time
+</b></font></h2>
+
+<a name="wp1058573"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><p><table border="0" cellpadding="0" cellspacing="0"><img src="images/DDA140ZT4898.png" align="left" height="181" width="334" border="0" hspace="0" vspace="0"></table></p><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+
+
+</font></p>
+
+<a name="wp1058590"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM increases or decreases the field coil excitation current by sending a duty signal to the power transistor built into the generator.
+</font></div>
+
+<a name="wp1058604"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM changes the duty ratio of the duty signal to change the energization time of the power transistor. As a result, field coil excitation current is changed. For example, when the battery positive voltage drops, the duty ratio of the duty signal sent to the power transistor is larger, increasing the field coil excitation current.
+</font></div>
+
+<a name="wp1058614"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Control
+</b></font></h2>
+
+<a name="wp1058624"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM calculates the target excitation current based on the battery charging condition.The battery charging condition is calculated from the amount of the battery charge/discharge current.
+</font></div>
+
+<a name="wp1058640"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;During deceleration fuel cut, the PCM increases the generator voltage to store the power in the battery. Except during deceleration, discharge is performed by the battery reducing generator output load.
+</font></div>
+
+<a name="wp1058650"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When the current sensor has a malfunction (If DTC P1515 is recorded), the PCM calculates the target excitation current, as usual, based on the targeted generator current (target generated current) and the generator rotation speed at the time.
+</font></div>
+
+<a name="wp1058660"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The generator rotation speed is calculated based on the ratio between the generator pulley and eccentric shaft pulley, and the engine speed.
+</font></div>
+
+<a name="wp1058670"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The target output current is calculated from the difference obtained by comparison between present battery positive voltage and target battery positive voltage (regulated voltage), calculated based on the IAT, engine speed, and vehicle speed.
+</font></div>
+
+<a name="wp1058680"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When an electrical load is applied, power consumption increases and the battery positive voltage drops, increasing the target engine speed at idling.
+</font></div>
+
+<a name="wp1059067"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ 
+</font></p>
+  </body>
+</html>

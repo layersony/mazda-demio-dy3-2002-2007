@@ -1,0 +1,247 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DTC C1095</title>
+</head>
+<body><a name="id040200802900"></a><p class="servinfo-title"><span class="servinfo-head"></span>DTC C1095</p>
+<hr>
+<p class="servinfo-title-id" align="right">id040200802900</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>DTC</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody"><span>C1095</span></div>
+</td>
+<td id="" align="left">
+<div class="tbody"><span>Motor relay, pump motor</span></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" colspan="2">
+<div class="tbody"><span>DETECTION CONDITION</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  ABS motor stuck OFF when vehicle is started or during ABS operation, ABS motor ON is commanded.</div>
+<div class="list">•  ABS motor stuck ON when vehicle is started or during ABS operation, ABS motor OFF is commanded.</div>
+<div class="list">•  Motor monitor ON signal is not input after specified time when the motor signal is switched from ON to OFF by ABS HU/CM.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" colspan="2">
+<div class="tbody"><span>POSSIBLE CAUSE</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Malfunction of fuse (ABS-P 30 A)</div>
+<div class="list">•  Open or short to ground circuit in harness between ABS HU/CM terminal Z and battery positive terminal</div>
+<div class="list">•  Open circuit in harness between ABS HU/CM terminal B and body ground</div>
+<div class="list">•  Stuck motor relay and/or ABS motor</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" colspan="4"><img src="images/am2zzw00004822.png"></td>
+</tr>
+</tbody>
+</table>
+</p>
+<p clear="all">
+<p class="table-title">Diagnostic procedure</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT ABS FUSE CONDITION</div>
+<div class="list">•  Is ABS fuse (ABS-P (30 A)) normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace fuse, then go to Step 6.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY PUMP MOTOR OPERATION</div>
+<div class="list">•  Turn ignition key to OFF.</div>
+<div class="list">•  Connect WDS or equivalent to DLC-2.</div>
+<div class="list">•  Turn ignition key to ON (engine OFF).</div>
+<div class="list">•  Access PMP_MOTOR active command modes using WDS or equivalent.</div>
+<div class="list">•  Does pump motor operate?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace ABS HU/CM, then go to Step 6.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT MOTOR RELAY POWER SUPPLY CIRCUIT FOR OPEN CIRCUIT</div>
+<div class="list">•  Turn ignition key to OFF.</div>
+<div class="list">•  Disconnect ABS HU/CM connector.</div>
+<div class="list">•  Measure continuity between ABS HU/CM terminal Z (harness side) <span></span>and battery positive terminal.</div>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace harness for open circuit between battery positive terminal and ABS HU/CM terminal Z, then go to Step 6.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT MOTOR RELAY POWER SUPPLY CIRCUIT FOR SHORT TO GROUND CIRCUIT</div>
+<div class="list">•  Measure continuity between ABS HU/CM terminal Z (harness side) <span></span>and ground.</div>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace harness for short to ground circuit between battery positive terminal and ABS HU/CM terminal Z, then go to Step 6.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT PUMP MOTOR GROUND CIRCUIT FOR OPEN CIRCUIT</div>
+<div class="list">•  Inspect continuity between ABS HU/CM terminal B (harness side) and ground.</div>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace harness for open circuit between ABS HU/CM terminal B and ground, then go to next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">6</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY TROUBLESHOOTING COMPLETED</div>
+<div class="list">•  Clear DTC from memory.<div>(See <font class="extxref-label"><a href="id040200875600.html">ABS ON-BOARD DIAGNOSIS</a></font>.)</div>
+</div>
+<div class="list">•  Start engine and drive vehicle at <span>10 km/h {6.2 mph}</span> or above.</div>
+<div class="list">•  Gradually slow down and stop vehicle.</div>
+<div class="list">•  Is same DTC present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repeat the inspection from Step 1.</div>
+<div class="tbody">If the malfunction recurs, replace the ABS CM, then go to next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">7</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY AFTER REPAIR PROCEDURE</div>
+<div class="list">•  Is there any other DTC present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to applicable DTC inspection.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Troubleshooting completed.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

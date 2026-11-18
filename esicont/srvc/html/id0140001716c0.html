@@ -1,0 +1,495 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>EGR CONTROL OPERATION [ZY]</title>
+</head>
+<body><a name="id0140001716c0"></a><p class="servinfo-title"><span class="servinfo-head"></span>EGR CONTROL OPERATION [ZY]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0140001716c0</p><br clear="all"><a name="b3e014000140t360001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Stepping Motor Operation Principles</p>
+<div class="list">•  The PCM opens/closes the EGR valve by controlling the amount of stepping motor rotation (step number).</div>
+<div class="list">•  The stepping motor operates by the combination of coils No.1—4 according to the stepping motor step number.</div>
+<p clear="all">
+<p class="table-title">Energization condition for each coil</p>
+<p>
+<div>ON: Energization, OFF: Non-energization</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="left">
+<p class="thead">When current step number divided by eight</p>
+</th>
+<th id="" align="center">
+<p class="thead">Evenly divisible</p>
+</th>
+<th id="" align="center">
+<p class="thead">One leftover</p>
+</th>
+<th id="" align="center">
+<p class="thead">Two leftover </p>
+</th>
+<th id="" align="center">
+<p class="thead">Three leftover</p>
+</th>
+<th id="" align="center">
+<p class="thead">Four divisible</p>
+</th>
+<th id="" align="center">
+<p class="thead">Five leftover</p>
+</th>
+<th id="" align="center">
+<p class="thead">Six leftover </p>
+</th>
+<th id="" align="center">
+<p class="thead">Seven leftover</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">No.1 coil</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">No.2 coil</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">No.3 coil</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">No.4 coil</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p clear="all">
+<p class="table-title">Example of energization condition for each coil and step number</p>
+<p>
+<div>ON: Energization, OFF: Non-energization</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Step number</p>
+</th>
+<th id="" align="center">
+<p class="thead">0</p>
+</th>
+<th id="" align="center">
+<p class="thead">1</p>
+</th>
+<th id="" align="center">
+<p class="thead">2</p>
+</th>
+<th id="" align="center">
+<p class="thead">3</p>
+</th>
+<th id="" align="center">
+<p class="thead">4</p>
+</th>
+<th id="" align="center">
+<p class="thead">5</p>
+</th>
+<th id="" align="center">
+<p class="thead">6</p>
+</th>
+<th id="" align="center">
+<p class="thead">7</p>
+</th>
+<th id="" align="center">
+<p class="thead">8</p>
+</th>
+<th id="" align="center">
+<p class="thead">9</p>
+</th>
+<th id="" align="center">
+<p class="thead">10</p>
+</th>
+<th id="" align="center">
+<p class="thead">30</p>
+</th>
+<th id="" align="center">
+<p class="thead">52</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">No.1 coil</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">No.2 coil</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">No.3 coil</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">No.4 coil</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="list">•  The energization condition of stepping motor coils No.1—4 can be verified by verifying the step number from “SEGRP” on the PID/data monitor function of the WDS or equivalent.</div><br clear="all"><a name="b3e014000140t360002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Control outline</p>
+<div class="list">•  The PCM constantly calculates the optimum target EGR valve position according to the engine operation conditions and controls the EGR stepping motor step number so that the current EGR valve position is close to the target.</div>
+<div class="list">•  If the current EGR valve position is smaller than the target EGR position (deviation is a positive number), the PCM increases the stepping motor step number and opens the EGR valve. If larger (deviation is a negative number), the PCM decreases the stepping motor step number and closes the EGR valve. Step numbers are increased or decreased by one step at a time.</div><br clear="all"><a name="b3e014000140t360003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Target EGR valve position</p>
+<div class="list">•  The PCM determines the value to increase or decrease the EGR valve opening angle according to the engine operation conditions. The PCM determines the target EGR valve position through each correction based on the basic EGR valve position that is set according to the engine speed and load.</div>
+<p clear="all">
+<p class="table-title">Target EGR valve position determination table</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center" colspan="2">
+<p class="thead">Contents</p>
+</th>
+<th id="" align="center">
+<p class="thead">Method for calculating or determining the EGR valve position and correction</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" colspan="2">
+<div class="tbody">Basic EGR valve position</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Within steps 0—52 in the stepping motor, determined as follows:</div>
+<div class="list">•  When the engine speed is 1,000—4,700 rpm and the charging efficiency<sup>*1</sup> is within 19—75%, the engine speed and charging efficiency are determined to be at basic position</div>
+<div class="list">•  When the EGR control inhibition conditions are met, step 0.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="4">
+<div class="tbody">correction<sup>*2</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Engine coolant temperature correction</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Purpose: Improved driveability</div>
+<div class="list-title">Engine coolant temperature is 50—65°C {122—149°F}</div>
+<div class="list">•  The step number is restricted between 0—100% of the basic EGR valve position according to the engine coolant temperature.<div>Low engine coolant temperature→low step number</div>
+</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Intake air temperature correction</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Purpose: Improved driveability</div>
+<div class="list-title">Intake air temperature is 60°C {140°F} or less</div>
+<div class="list">•  Step number is restricted to 100% of the basic EGR valve position<div>(Basic EGR valve position = step number).</div>
+</div>
+<div class="list-title">Intake air temperature exceeds 60°C {140°F}</div>
+<div class="list">•  Step number is restricted between 40—100% of basic EGR valve position<div>(Low intake air temperature→large step number)</div>
+</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Acceleration/deceleration correction</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Purpose: Improved driveability</div>
+<div class="list-title">During acceleration/deceleration, when the throttle valve opening angle fluctuation rate is the set value or more</div>
+<div class="list">•  During acceleration→step number is restricted to 20% of basic EGR value position.</div>
+<div class="list">•  During deceleration→step number is restricted to 0% of basic EGR valve position.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Variable tumble correction</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Purpose: EGR volume optimization during variable tumble control</div>
+<div class="tbody"><span>Controls EGR volume according to the variable tumble shutter valve open/closed condition</span></div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :The charging efficiency is the ratio of the actual amount of intake air to the maximum air charging amount (mass volume) of the cylinder. This value increases proportionately to the increase in engine load.</div>
+<div class="deflist">*2  :The correction is to restrict the basic EGR valve position value. Except for the above conditions and inhibition conditions, the correction value is 100%, and the target EGR valve position equals the EGR valve position value.</div><br clear="all"><a name="b3e014000140t360004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Inhibition conditions</p>
+<div class="list">•  To improve driveability and ensure exhaust emission performance, the EGR valve closes when any of the following conditions are met.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Idling</div>
+<div class="list">―  	Engine speed is less than 1,200 rpm or more than 4,200 rpm.</div>
+<div class="list">―  Engine coolant temperature is lass than 50°C {122°F}</div>
+<div class="list">―  	Charging efficiency is less than 12.5%.</div>
+<div class="list">―  	When the fuel injection control is in the high load volume increase zone</div>
+<div class="list">―  Decelerated</div>
+<div class="list">―  During TCS control</div>
+</dd>
+</dl>
+</body>
+</html>

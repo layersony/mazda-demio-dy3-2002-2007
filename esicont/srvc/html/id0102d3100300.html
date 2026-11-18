@@ -1,0 +1,333 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DTC DETECTION LOGIC AND CONDITIONS [ZY]</title>
+</head>
+<body><a name="id0102d3100300"></a><p class="servinfo-title"><span class="servinfo-head"></span>DTC DETECTION LOGIC AND CONDITIONS [ZY]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0102d3100300</p>
+<div class="list-title">P0011 CMP-timing over-advanced</div>
+<div class="list">•  The actual valve timing is over-advanced from the target valve timing when the OCV is controlled within the maximum valve timing retard condition.</div>
+<div class="list-title">P0012 CMP-timing over-retarded</div>
+<div class="list">•  The actual valve timing is over-retarded from the target valve timing when the OCV system control is within feed-back range.</div>
+<div class="list-title">P0030 Front HO2S heater control circuit problem</div>
+<div class="list">•  The PCM monitors the front HO2S impedance when under the front HO2S heater control for 200 s. If the impedance is more than 44 ohms while PCM turns front HO2S heater on, the PCM determines that there is a front HO2S heater control circuit problem.</div>
+<div class="list-title">P0031 Front HO2S heater control circuit high</div>
+<div class="list">•  The PCM monitors the front HO2S heater control voltage when the PCM turns the front HO2S heater off. If the control voltage exceeds 50 % of the battery voltage, the PCM determines that the front HO2S heater control circuit voltage is high.<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Front HO2S heater is controlled by duty signal.</div>
+</div>
+</dd>
+</dl>
+</div>
+<div class="list-title">P0032 Front HO2S heater control circuit low</div>
+<div class="list">•  The PCM monitors the front HO2S heater control voltage when the PCM turns the front HO2S heater on. If the control voltage is less than 50% of the battery voltage, the PCM determines that the front HO2S heater control circuit voltage is low.<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Front HO2S heater is controlled by duty signal.</div>
+</div>
+</dd>
+</dl>
+</div>
+<div class="list-title">P0037 Rear HO2S heater control circuit high</div>
+<div class="list">•  The PCM monitors the rear HO2S heater control voltage when the PCM turns the rear HO2S heater off. If the control voltage exceeds 25% of the battery voltage, the PCM determines that the rear HO2S heater control circuit voltage is high.</div>
+<div class="list-title">P0038 Rear HO2S heater control circuit low</div>
+<div class="list">•  The PCM monitors the rear HO2S heater control voltage when the PCM turns the rear HO2S heater on. If the control voltage is less than 57% of the battery voltage, the PCM determines that the rear HO2S heater control circuit voltage is low.</div>
+<div class="list-title">P0101 MAF sensor circuit range/performance problem</div>
+<div class="list">•  The PCM compares the actual MAF amount with the expected MAF amount when the engine is running.</div>
+<dl>
+<dd class="list">
+<div class="list">―  If the throttle opening angle is more than 50% and the MAF amount is less than 9 g/s {1.2 lb/min} (less than 1.4 V), the PCM determines that there is a MAF sensor circuit range/performance problem.</div>
+<div class="list">―  If the ECT is more than 70 °C {158 °F}, the engine speed is less than 2,000 rpm and the MAF amount is more than 65 g/s {8.6 lb/min} (more than 2.8 V), the PCM determines that there is a MAF sensor circuit range/performance problem.</div>
+</dd>
+</dl>
+<div class="list-title">P0102 MAF sensor circuit low input</div>
+<div class="list">•  The PCM monitors the input voltage from the MAF sensor when the engine is running. If the input voltage is less than 0.21 V, the PCM determines that the MAF circuit has a malfunction.</div>
+<div class="list-title">P0103 MAF sensor circuit high input</div>
+<div class="list">•  The PCM monitors the input voltage from the MAF sensor when the engine is running. If input the voltage is more than 4.9 V, the PCM determines that the MAF circuit has a malfunction.</div>
+<div class="list-title">P0107 MAP sensor circuit low input</div>
+<div class="list">•  The PCM monitors input voltage from the MAP sensor. If the input voltage is less than 0.1 V, the PCM determines that the MAP sensor circuit has a malfunction.</div>
+<div class="list-title">P0108 MAP sensor circuit high input</div>
+<div class="list">•  The PCM monitors the input voltage from the MAP sensor. If the input voltage is more than 4.8 V, the PCM determines that the MAP sensor circuit has a malfunction.</div>
+<div class="list-title">P0111 IAT sensor circuit range/performance problem</div>
+<div class="list">•  The PCM compares the IAT with the ECT when the engine is running. If the IAT is higher than the ECT by 40 °C {104 °F}, the PCM determines that there is an IAT sensor circuit range/performance problem.</div>
+<div class="list-title">P0112 IAT sensor circuit low input</div>
+<div class="list">•  The PCM monitors the input voltage from the IAT sensor. If the PCM detects that the IAT sensor voltage is less than 0.16 V, the PCM determines that the IAT sensor circuit has a malfunction.</div>
+<div class="list-title">P0113 IAT sensor circuit high input</div>
+<div class="list">•  The PCM monitors the input voltage from the IAT sensor. If the input voltage is more than 4.8 V, the PCM determines that the IAT sensor circuit has a malfunction.</div>
+<div class="list-title">P0117 ECT sensor circuit low input</div>
+<div class="list">•  The PCM monitors the input voltage from the ECT sensor. If the PCM detects that the ECT sensor voltage is less than 0.20 V, the PCM determines that the ECT sensor circuit has a malfunction.</div>
+<div class="list-title">P0118 ECT sensor circuit high input</div>
+<div class="list">•  The PCM monitors the input voltage from the ECT sensor. If the PCM detects that the ECT sensor voltage is more than 4.9 V, the PCM determines that the ECT sensor circuit has a malfunction.</div>
+<div class="list-title">P0122 TP sensor No.1 circuit low input</div>
+<div class="list">•  If the PCM detects that the TP sensor No.1 voltage is less than 0.10 V while the engine is running, the PCM determines that the TP sensor No.1 circuit has a malfunction.</div>
+<div class="list-title">P0123 TP sensor No.1 circuit high input</div>
+<div class="list">•  If the PCM detects that the TP sensor No.1 voltage is more than 4.9 V after the ignition switch is turned to the ON position, the PCM determines that the TP sensor No.1 circuit has a malfunction.</div>
+<div class="list-title">P0125 Insufficient coolant temperature for closed loop fuel control</div>
+<div class="list">•  The PCM monitors the ECT after cold engine start. If the ECT does not reach the specification in a certain period, the PCM determines that the engine coolant temperature for closed loop fuel control is insufficient.</div>
+<div class="list-title">P0130 Front HO2S circuit problem</div>
+<div class="list">•  The PCM monitors the front HO2S impedance when under the front HO2S heater control. If the impedance is more than 500 ohms, the PCM determines that there is a front HO2S circuit problem.</div>
+<div class="list-title">P0131 Front HO2S circuit low input</div>
+<div class="list">•  The PCM monitors the input signal from the front HO2S and the front HO2S output current when the engine is running. If the input signal is less than 1.8 V or the output current is less than –5 mA, the PCM determines that the front HO2S circuit voltage is low.</div>
+<div class="list-title">P0132 Front HO2S circuit high input</div>
+<div class="list">•  The PCM monitors the input signal from the front HO2S and the front HO2S output current when the engine is running. If the input signal is 3.8 V or more or output current is 5 mA or more, the PCM determines that the front HO2S circuit voltage is high.</div>
+<div class="list-title">P0133 Front HO2S circuit slow response</div>
+<div class="list">•  Front HO2S malfunction is detected by measuring of the average frequency of front HO2S signal, time required to pass from rich to lean, time required to pass from lean to rich. the average frequency of front HO2S signal is more than the threshold value.</div>
+<dl>
+<div class="list-title">MONITORING CONDITIONS</div>
+<dd class="list">
+<div class="list">―  Following conditions are met:</div>
+<dl>
+<dd class="list">
+<div class="list">•  ECT sensor and front HO2S heater are normal.</div>
+<div class="list">•  Engine speed: 1,750—3,500</div>
+<div class="list">•  Charging efficiency: 35—59% (Engine speed is 2,500 rpm)</div>
+<div class="list">•  Fuel system loop status is closed loop fuel control.</div>
+<div class="list">•  Engine coolant temperature above 70 °C {158 °F}.</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="list-title">P0134 Front HO2S circuit no activity detected</div>
+<div class="list">•  If the front HO2S impedance is 220 ohms or more even though 40 s or more has elapsed since the engine was started.</div>
+<div class="list-title">P0138 Rear HO2S circuit high input</div>
+<div class="list">•  The PCM monitors the input voltage from the rear HO2S when the engine is running. If the input voltage is 1.2 V or more for 0.8 s or more, the PCM determines that the rear HO2S circuit voltage is high.</div>
+<div class="list-title">P0140 Rear HO2S circuit no activity detected</div>
+<div class="list">•  The PCM monitors the input voltage from the rear HO2S when the engine is running. If the input voltage from the rear HO2S never exceeds 0.55 V for 30.4 s or more, the PCM determines that the rear HO2S circuit is not activated.</div>
+<div class="list-title">P0222 TP sensor No.2 circuit low input</div>
+<div class="list">•  The PCM monitors the input voltage from the TP sensor No.2 when the engine is running. If the input voltage is less than 0.10 V, the PCM determines that the TP sensor No.2 circuit input voltage is low.</div>
+<div class="list-title">P0223 TP sensor No.2 circuit high input</div>
+<div class="list">•  The PCM monitors the input voltage from the TP sensor No.2 when the engine is running. If the input voltage is more than 4.9 V, the PCM determines that the TP sensor No.2 circuit input voltage is high.</div>
+<div class="list-title">P0300 Random misfire detected</div>
+<div class="list">•  The PCM monitors the CKP sensor input signal interval time. the PCM calculates the change of interval time for each cylinder. If change of interval time exceeds the preprogrammed criteria, the PCM detects misfire in the corresponding cylinder. While the engine is running, the PCM counts the number of misfires that occurred at 200 crankshaft revolutions and 1,000 crankshaft revolutions and calculates the misfire ratio for each crankshaft revolution. If the ratio exceeds the preprogrammed criteria, the PCM determines that a misfire, which can damage the catalytic converter or affect emission performance, has occurred.</div>
+<div class="list-title">P0301, P0302, P0303, P0304 Each cylinder misfire detected</div>
+<div class="list">•  The PCM monitors the CKP sensor input signal interval time. The PCM calculates the change of interval time for each cylinder. If the change of interval time exceeds the preprogrammed criteria, the PCM detects a misfire in the corresponding cylinder. While the engine is running, the PCM counts the number of misfires that occurred at 200 crankshaft revolutions and 1,000 crankshaft revolutions and calculates the misfire ratio for each crankshaft revolution. If the ratio exceeds the preprogrammed criteria, the PCM determines that a misfire, which can damage the catalytic converter or affect emission performance, has occurred.</div>
+<div class="list-title">P0327 KS circuit low input</div>
+<div class="list">•  The PCM monitors the input signal from the KS when the engine is running. If the input voltage is less than 1.25 V, the PCM determines that the KS circuit has a malfunction.</div>
+<div class="list-title">P0328 KS circuit high input</div>
+<div class="list">•  The PCM monitors the input signal from the KS when the engine is running. If the input voltage is more than 3.75 V, the PCM determines that the KS circuit has a malfunction.</div>
+<div class="list-title">P0335 CKP sensor circuit problem</div>
+<div class="list">•  If the PCM does not receive the input voltage from the CKP sensor for 4.2 s or more while the MAF is 1.43 g/s {0.189 lb/min} or more, the PCM determines that there is a CKP sensor circuit problem.</div>
+<div class="list">•  If a malfunction is detected in the input pulse pattern from the CKP sensor.</div>
+<div class="list-title">P0340 CMP sensor circuit problem</div>
+<div class="list">•  The PCM monitors the input voltage from the CMP sensor when the engine is running. If the PCM does not receive the input voltage from the CMP sensor for 13 consecutive engine rotations, the PCM determines that there is a CMP sensor circuit problem.</div>
+<div class="list-title">P0351 Ignition coil No.1 control circuit malfunction</div>
+<div class="list">•  If the PCM detects an abnormal voltage value when ignition coil No.1 is energized under the following monitoring conditions, the PCM determines that the ignition coil No.1 control circuit has a malfunction.</div>
+<dl>
+<div class="list-title">MONITORING CONDITIONS</div>
+<dd class="list">
+<div class="list">―  Engine speed is less than 3,000 rpm.</div>
+<div class="list">―  Battery voltage 9—16.5 V</div>
+</dd>
+</dl>
+<div class="list-title">P0352 Ignition coil No.2 control circuit malfunction</div>
+<div class="list">•  If the PCM detects an abnormal voltage value when ignition coil No.2 is energized under the following monitoring conditions, the PCM determines that the ignition coil No.2 control circuit has a malfunction.</div>
+<dl>
+<div class="list-title">MONITORING CONDITIONS</div>
+<dd class="list">
+<div class="list">―  Engine speed is less than 3,000 rpm.</div>
+<div class="list">―  Battery voltage 9—16.5 V</div>
+</dd>
+</dl>
+<div class="list-title">P0353 Ignition coil No.3 control circuit malfunction</div>
+<div class="list">•  If the PCM detects an abnormal voltage value when ignition coil No.3 is energized under the following monitoring conditions, the PCM determines that the ignition coil No.3 control circuit has a malfunction.</div>
+<dl>
+<div class="list-title">MONITORING CONDITIONS</div>
+<dd class="list">
+<div class="list">―  Engine speed is less than 3,000 rpm.</div>
+<div class="list">―  Battery voltage 9—16.5 V</div>
+</dd>
+</dl>
+<div class="list-title">P0354 Ignition coil No.4 control circuit malfunction</div>
+<div class="list">•  If the PCM detects abnormal voltage value when ignition coil No.4 is energized under the following monitoring conditions, the PCM determines that the ignition coil No.4 control circuit has a malfunction.</div>
+<dl>
+<div class="list-title">MONITORING CONDITIONS</div>
+<dd class="list">
+<div class="list">―  Engine speed is less than 3,000 rpm.</div>
+<div class="list">―  Battery voltage 9—16.5 V</div>
+</dd>
+</dl>
+<div class="list-title">P0401 EGR flow insufficient detected</div>
+<div class="list">•  If the fluctuation in intake manifold pressure (3 times average value) is too low when the EGR value opens/closes.</div>
+<div class="list-title">P0403 EGR control circuit problem</div>
+<div class="list">•  The PCM monitors the EGR valve control signal. If the voltage of the EGR valve control signal remains low or high, the PCM determines that there is the EGR control circuit problem.</div>
+<div class="list-title">P0421 Warm up Catalyst system efficiency below threshold</div>
+<div class="list">•  The PCM compares the number of the front HO2S and rear HO2S inversions for a predetermined time. The PCM monitors the number of inversions the rear side performs while the front side inverts for a specified number of times when the following monitoring conditions are met. The PCM detects the inversion ratio. If inversion ratio is below the threshold, the PCM determines that the catalyst system has deteriorated.</div>
+<dl>
+<div class="list-title">MONITORING CONDITION</div>
+<dd class="list">
+<div class="list">―  Engine speed is 1,500— 3,000 rpm.</div>
+<div class="list">―  Calculated TWC temperature in PCM is more than 400 °C {752 °F}.</div>
+<div class="list">―  Calculated load is 21— 48 %. (at engine speed is 2,000 rpm)</div>
+</dd>
+</dl>
+<div class="list-title">P0443 Purge solenoid valve circuit problem</div>
+<div class="list">•  The PCM monitors the purge solenoid valve control signal. If the voltage of the purge solenoid valve control signal remains low or high, the PCM determines that there is the purge solenoid valve control circuit problem.</div>
+<div class="list-title">P0480 Cooling fan relay No.1 control circuit malfunction</div>
+<div class="list">•  The PCM monitors the cooling fan relay No.1 control signal. If the voltage remain low or high, the PCM determines that the cooling fan relay No.1 control has a malfunction.</div>
+<div class="list-title">P0481 Cooling fan relay No.2 control circuit malfunction</div>
+<div class="list">•  The PCM monitors the cooling fan relay No.2 control signal. If the voltage remain low or high, the PCM determines that the cooling fan relay No.2 control has malfunction.</div>
+<div class="list-title">P0500 VSS circuit problem</div>
+<div class="list"><span>With ABS, Without ABS (MTX)</span></div>
+<dl>
+<dd class="list">
+<div class="list">•  The PCM monitors the vehicle speed signal when the following conditions are met. If the vehicle speed signal is less than 3.76 km/h {2.33 mph} for 14 s or more, the PCM determines that there is a VSS circuit malfunction. </div>
+<dl>
+<dd class="list">
+<div class="list">―  Load condition</div>
+<div class="list">―  Charging efficiency: 40.0% or more</div>
+<div class="list">―  Engine speed: 2,500 rpm or more</div>
+<div class="list">―  Brake switch is off</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="list"><span>Without ABS (ATX)</span></div>
+<dl>
+<dd class="list">
+<div class="list">•  If the AT control part detects a speed sensor malfunction.</div>
+</dd>
+</dl>
+<div class="list-title">P0505 Idle air control problem</div>
+<div class="list">•  The PCM cannot control idle speed toward target idle speed while KOER self test.</div>
+<div class="list-title">P0506 Idle air control system RPM lower than expected</div>
+<div class="list">•  The PCM compares the actual idle speed with the target idle speed when the engine is running. If the actual idle speed is lower than targeted by 100 rpm, the PCM determines that the idle air control system RPM is lower than expected.</div>
+<div class="list-title">P0507 Idle air control system RPM higher than expected</div>
+<div class="list">•  The PCM compares the actual idle speed with the target idle speed when the engine is running. If the actual idle speed is higher than targeted by 200 rpm, the PCM determines that the idle air control system RPM is higher than expected.</div>
+<div class="list-title">P0537 Evaporator temperature sensor circuit low input</div>
+<div class="list">•  The PCM monitors the input voltage from the evaporator temperature sensor. If the input voltage is less than 0.08 V, the PCM determines that the evaporator temperature sensor circuit has a malfunction.</div>
+<div class="list-title">P0538 Evaporator temperature sensor circuit high input</div>
+<div class="list">•  The PCM monitors the input voltage from the evaporator temperature sensor. If the input voltage is more than 4.9 V, the PCM determines that the evaporator temperature sensor circuit has a malfunction. </div>
+<div class="list-title">P0601 PCM memory check sum error</div>
+<div class="list">•  PCM internal malfunction.</div>
+<div class="list-title">P0602 PCM programming error</div>
+<div class="list">•  No configuration data in the PCM.</div>
+<div class="list-title">P0604 PCM random access memory error</div>
+<div class="list">•  PCM internal random access memory error.</div>
+<div class="list-title">P0606 PCM processor</div>
+<div class="list">•  PCM internal malfunction.</div>
+<div class="list-title">P0610 PCM vehicle configuration error</div>
+<div class="list">•  PCM data configuration error.</div>
+<div class="list-title">P0638 Throttle actuator control circuit range/performance problem</div>
+<div class="list">•  The PCM compares the actual TP with the target TP when the engine is running. If the difference is more than the specification, the PCM determines that there is a throttle actuator control circuit range/performance problem.</div>
+<div class="list-title">P0660 Variable intake air control circuit malfunction</div>
+<div class="list">•  The PCM monitors the variable intake air control signal. If the PCM turns the variable intake air shutter valve actuator to open or close but the voltages do not coincide with the PCM signal voltages, the PCM determines that the variable intake air control circuit has a malfunction.</div>
+<div class="list">•  The PCM could not perform the self-test for the variable intake air control circuit.</div>
+<div class="list-title">P0668 PCM temperature sensor circuit low input</div>
+<div class="list">•  The PCM monitors the PCM temperature sensor (integrated in the PCM) signal. If the PCM detects that the PCM temperature sensor voltage is less than the specification, the PCM determines that the PCM temperature sensor has a malfunction.</div>
+<div class="list-title">P0669 PCM temperature sensor circuit high input</div>
+<div class="list">•  The PCM monitors the PCM temperature sensor (integrated the PCM) signal. If the PCM detects that the PCM temperature sensor voltage is more than the specification, the PCM determines that the PCM temperature sensor has a malfunction.</div>
+<div class="list-title">P0703 Brake switch input circuit problem</div>
+<div class="list">•  The PCM monitors the input signal from the brake switch when the following conditions are met. If the input signal does not change while alternately accelerating and decelerating 8 times, the PCM determines that there is a brake switch input circuit malfunction.</div>
+<dl>
+<div class="list-title">MONITORING CONDITION</div>
+<dd class="list">
+<div class="list">―  Vehicle speed: decelerating more than 30 km/h {19 mph} to 0 km/h {0 mph}</div>
+<div class="list">―  Deceleration: more than 4 km/h {2 mph} per s</div>
+</dd>
+</dl>
+<div class="list-title">P0704 CPP switch input circuit problem</div>
+<div class="list">•  The PCM monitors the changes in input voltage from the CPP switch. If the PCM does not detect the voltage changes while the vehicle runs with the vehicle speed <span>above 30 km/h {19 mph}</span> and stops 8 times alternately, the PCM determines that the CPP switch circuit has a malfunction.</div>
+<div class="list-title">P0850 Neutral switch input circuit problem</div>
+<div class="list">•  The PCM monitors the input signal from the neutral switch when the vehicle is running. If the input signal does not change while alternately running more than 30 km/h {19 mph} 8 times, the PCM determines that there is a neutral switch input circuit malfunction.</div>
+<div class="list-title">P1384 Oil Control Valve (OCV) circuit malfunction</div>
+<div class="list">•  If any of the following conditions are met during the KOER self-test.</div>
+<dl>
+<dd class="list">
+<div class="list">―  The PCM cannot control the actual valve timing at the target valve timing.</div>
+<div class="list">―  The PCM cannot hold the valve timing.</div>
+</dd>
+</dl>
+<div class="list-title">P1515 Current sensor circuit problem</div>
+<div class="list">•  The PCM monitors the input voltage from the current sensor. If the input voltage is less than 0.24 V or more than 4.65 V, the PCM determines that there is a current sensor circuit problem.</div>
+<div class="list-title">P2008 Variable tumble control circuit malfunction</div>
+<div class="list">•  The PCM monitors the variable tumble control signal. If the PCM turns the variable tumble shutter valve actuator to open or close but voltages do not coincide with the PCM signal voltages the PCM determines that the variable tumble control circuit has a malfunction.</div>
+<div class="list">•  Variable tumble control IC error.</div>
+<div class="list-title">P2016 Variable tumble shutter valve switch circuit low</div>
+<div class="list">•  The PCM monitors the input voltage from the variable tumble shutter valve switch. If the input voltage is less than 0.06 V, the PCM determines that the variable tumble shutter valve switch circuit voltage is low.</div>
+<div class="list-title">P2017 Variable tumble shutter valve switch circuit high</div>
+<div class="list">•  The PCM monitors the input voltage from the variable tumble shutter valve switch. If the input voltage is 4.9 V or more, the PCM determines that the variable tumble shutter valve switch circuit voltage is high.</div>
+<div class="list-title">P2088 Variable valve timing control circuit low</div>
+<div class="list">•  If the PCM detects that the OCV drive current is less than the specification<sup>*</sup> when the OCV control duty target is approx. 99 %, the PCM determines that the variable valve timing control circuit low.<div>*: Detected specification value depends on the battery voltage.</div>
+</div>
+<div class="list-title">P2089 Variable valve timing control circuit high</div>
+<div class="list">•  If the PCM detects that the OCV drive current is as specified or more when the OCV control duty target is 3 % or less, the PCM determines that the variable valve timing control circuit high.</div>
+<div class="list-title">P2096 Target A/F feedback system too lean</div>
+<div class="list">•  If fuel correction amount corresponding to the rear HO2S target voltage exceeds the specified value while performing rear HO2S feedback correction.</div>
+<div class="list-title">P2097 Target A/F feedback system too rich</div>
+<div class="list">•  If fuel correction amount corresponding to the rear HO2S target voltage is lower than the specified value while performing rear HO2S feedback correction.</div>
+<div class="list-title">P2101 Throttle actuator power supply line circuit problem</div>
+<div class="list">•  The PCM monitors the input voltage from the drive-by-wire relay. The PCM turns the drive-by-wire relay on but the input voltage is 5.0 V or less, the PCM determines that the drive-by-wire relay control circuit voltage is low.</div>
+<div class="list">•  The PCM monitors the input voltage from the drive-by-wire relay. The PCM turns the drive-by-wire relay off but the input voltage is 5.0 V or more, the PCM determines that the drive-by-wire relay control circuit voltage is high.</div>
+<div class="list-title">P2107 Throttle actuator control module processor error</div>
+<div class="list">•  PCM internal malfunction.</div>
+<div class="list-title">P2108 Throttle actuator control module performance error</div>
+<div class="list">•  PCM internal malfunction.</div>
+<div class="list-title">P2109 TP sensor minimum stop range/performance problem</div>
+<div class="list">•  The PCM monitors the minimum TP when the closed TP learning is completed. If the TP is 0.339 V or less or 0.66V or more, the PCM determines that there is a TP sensor minimum stop range/performance problem.</div>
+<div class="list-title">P2112 Throttle actuator control system range/performance problem</div>
+<div class="list">•  The PCM monitors the throttle actuator control duty ratio when the engine is running. If the duty ratio is 95% or more, the PCM determines that there is a throttle actuator control system range/performance problem.</div>
+<div class="list-title">P2119 Throttle actuator control throttle body range/performance problem</div>
+<div class="list">•  The PCM compares the actual TP with initial setting TP when the ignition switch is turned off. If the TP is lower than the initial setting TP, the PCM determines that there is a throttle valve return spring malfunction.</div>
+<div class="list-title">P2122 APP sensor No.1 circuit low input</div>
+<div class="list">•  The PCM monitors the input voltage from the APP sensor No.1 when the engine is running. If the input voltage is 0.35 V or less, the PCM determines that the APP sensor No.1 circuit input voltage is low.</div>
+<div class="list-title">P2123 APP sensor No.1 circuit high input</div>
+<div class="list">•  The PCM monitors the input voltage from the APP sensor No.1 when the engine is running. If the input voltage is 4.8 V or more, the PCM determines that the APP sensor No.1 circuit input voltage is high.</div>
+<div class="list-title">P2127 APP sensor No.2 circuit low input</div>
+<div class="list">•  The PCM monitors the input voltage from the APP sensor No.2 when the engine is running. If the input voltage is 0.35 V or less, the PCM determines that the APP sensor No.2 circuit input voltage is low.</div>
+<div class="list-title">P2128 APP sensor No.2 circuit high input</div>
+<div class="list">•  The PCM monitors the input voltage from the APP sensor No.2 when the engine is running. If the input voltage is 4.8 V or more, the PCM determines that the APP sensor No.2 circuit input voltage is high.</div>
+<div class="list-title">P2135 TP sensor No.1/No.2 voltage correlation problem</div>
+<div class="list">•  The PCM compares the input voltage from TP sensor No.1 with the input voltage from TP sensor No.2 when the engine is running. If the difference is more than the specification, the PCM determines that there is a TP sensor No.1/No.2 voltage correlation problem.</div>
+<div class="list-title">P2138 APP sensor No.1/No.2 voltage correlation problem</div>
+<div class="list">•  The PCM compares the input voltage from APP sensor No.1 with the input voltage from APP sensor No.2 when the engine is running. If the difference is more than the specification, the PCM determines that there is a APP sensor No.1/No.2 voltage correlation problem.</div>
+<div class="list-title">P2177 System too lean off idle</div>
+<div class="list">•  The PCM monitors short term fuel trim (SHRTFT) and long term fuel trim (LONGFT) during closed loop fuel control during off-idle. If the LONGFT or the sum total of these fuel trims exceed preprogrammed criteria, PCM determines that fuel system is too lean during off-idle.</div>
+<div class="list-title">P2178 System too rich off idle</div>
+<div class="list">•  The PCM monitors short term fuel trim (SHRTFT) and long term fuel trim (LONGFT) during closed loop fuel control at off-idle. If the LONGFT or the sum total of these fuel trims exceed preprogrammed criteria, PCM determines that fuel system is too rich at off-idle.</div>
+<div class="list-title">P2187 System too lean at idle</div>
+<div class="list">•  The PCM monitors short term fuel trim (SHRTFT) and long term fuel trim (LONGFT) during closed loop fuel control during idle. If the LONGFT or the sum total of these fuel trims and correction exceed preprogrammed criteria, PCM determines that fuel system is too lean during idle.</div>
+<div class="list-title">P2188 System too rich at idle</div>
+<div class="list">•  The PCM monitors the short term fuel trim (SHRTFT) and long term fuel trim (LONGFT) during the closed loop fuel control at idle. If the LONGFT or the sum total of these fuel terms exceed the preprogrammed criteria, PCM determines that fuel system is too rich at idle.</div>
+<div class="list-title">P2195 Front HO2S signal stuck lean</div>
+<div class="list">•  The PCM monitors the front HO2S output current when the following conditions are met. If the output current is 1.2 A or more for 25 s, the PCM determines that the front HO2S signal remains lean.</div>
+<dl>
+<div class="list-title">MONITORING CONDITION</div>
+<dd class="list">
+<div class="list">―  ECT: 70 °C {158 °F} or more</div>
+<div class="list">―  Engine speed: 1,000—3,200 rpm</div>
+<div class="list">―  MAF amount: 6—80 g/s {0.80—10.58 lb/min}</div>
+<div class="list">―  Target A/F feedback system status: feedback control</div>
+<div class="list">―  Output voltage from the middle HO2S: 0.2 V or more</div>
+</dd>
+</dl>
+<div class="list-title">P2196 Front HO2S signal stuck rich</div>
+<div class="list">•  The PCM monitors the front HO2S output current when the following conditions are met. If the output current is 0.85 A or less for 25 s, the PCM determines that the front HO2S signal remains rich.</div>
+<dl>
+<div class="list-title">MONITORING CONDITION</div>
+<dd class="list">
+<div class="list">―  ECT: 70 °C {158 °F} or more</div>
+<div class="list">―  Engine speed: 1,000—3,200 rpm</div>
+<div class="list">―  MAF amount: 6—80 g/s {0.80—10.58 lb/min}</div>
+<div class="list">―  Target A/F feedback system status: feedback control</div>
+<div class="list">―  Output voltage from the middle HO2S: 0.8 V or less</div>
+</dd>
+</dl>
+<div class="list-title">P2502 Charging system voltage problem</div>
+<div class="list">•  The PCM determines that the generator output voltage is 17 V or more or the battery voltage is 11 V or less while the engine running.</div>
+<div class="list-title">P2503 Charging system voltage low</div>
+<div class="list">•  The PCM needs 19.5 A or more from the generator, and determines that the generator output voltage is 8.49 V or less while the engine running.</div>
+<div class="list-title">P2504 Charging system voltage high</div>
+<div class="list">•  The PCM determines that the generator output voltage is 18.5 V or more or battery voltage is 16.0 V or more while the engine running.</div>
+<div class="list-title">P2507 PCM power input signal low</div>
+<div class="list">•  The PCM monitors the voltage of the backup battery positive. If the PCM detects that the battery positive terminal voltage is 2.5 V or less for 2 s, the PCM determines that the backup voltage circuit has a malfunction.</div>
+</body>
+</html>

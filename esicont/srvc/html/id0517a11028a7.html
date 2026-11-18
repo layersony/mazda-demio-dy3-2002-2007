@@ -1,0 +1,188 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.2.1206">
+    <meta name="TEMPLATEBASE" content="Simple HTML">
+    <meta name="LASTUPDATED" content="04/12/05 21:13:59">
+    <title>MANUAL MODE SHIFT CONTROL OPERATION (SPORT AT) [FN4A-EL]</title>
+  </head>
+
+  <body link="#3366CC" vlink="#9999CC" text="#000000" alink="#0000CC" bgcolor="#FFFFFF">
+<a name="wp1025486"> </a><h1><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="5"><b>
+MANUAL MODE SHIFT CONTROL OPERATION (SPORT AT) [FN4A-EL]
+</b></font></div></h1>
+<hr>
+
+<a name="wp1058564"> </a><p><div align="right"><font color="#000000" face="Arial" size="2">
+id0517a11028a7
+</font></div></p>
+
+<a name="wp1059798"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Manual mode shift
+</b></font></h2>
+
+<a name="wp1058574"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When the selector lever is shifted over from the D to M range position, the M range switch in the selector lever component turns on, sending a manual mode command signal to the PCM which activates the manual mode shift control.
+</font></div>
+
+<a name="wp1058588"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When in manual mode and the selector lever is operated in the back (+) direction, the up switch in the selector lever component is turned on and an up-shift command signal is input to the PCM. 
+</font></div>
+<dl>
+<a name="wp1058601"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	The PCM, triggered by the up-shift command signal, carries out shifting by outputting an operation signal to the shift solenoid if the ATF temperature is not low (for 3GR only), vehicle speed is higher than the set speed and the gear position is 3GR or lower. 
+</font></dd>
+</dl>
+<a name="wp1058616"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Conversely, when the selector lever is operated in the forward (-) direction, the down switch in the selector lever component turns on, and a down-shift command signal is input to the PCM. 
+</font></div>
+<dl>
+<a name="wp1058629"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	The PCM, triggered by the down-shift command signal, carries out shifting by outputting an operation signal to the shift solenoid if the vehicle speed is less than the set speed and the gear position is 2GR or above.
+</font></dd>
+</dl>
+<a name="wp1058644"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM utilizes a specialized M range automatic shift diagram. Due to this, restriction of manual shift demand and automatic control of downshifting is carried out, reducing load on the ATX, preventing engine over-rev and ensuring drive stability.
+</font></div>
+
+<a name="wp1058655"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th>
+<a name="wp1058740"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Condition
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058742"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Shift control
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058744"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Note
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058658"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2GR&rarr; 3GR up-shift command at low speed
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1058660"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;To reduce load on the ATX, upshifting is inhibited until vehicle reaches speed possible for upshifting
+</font></div>
+</td>
+    <td colspan="1" rowspan="3">
+<a name="wp1058716"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058763"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+3GR&rarr; 4GR up-shift command at low speed
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058773"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+3GR&rarr; 4GR up-shift command, low ATF temperature
+</font></div>
+</td>
+    <td>
+<a name="wp1058776"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;To reduce load on the ATX, upshifting to 4GR is inhibited
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058783"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+4GR&rarr; 3GR down-shift command, above set speed
+</font></div>
+</td>
+    <td colspan="1" rowspan="3">
+<a name="wp1058786"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;To prevent engine over-rev, downshifting is inhibited until vehicle reaches speed possible for downshifting
+</font></div>
+</td>
+    <td colspan="1" rowspan="3">
+<a name="wp1058789"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Gear position indicator light flash to alert driver
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058873"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+3GR&rarr; 2GR down-shift command, above set speed
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058863"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2GR&rarr; 1GR down-shift command, above set speed
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058922"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+In 4GR deceleration, speed goes below coast-down set speed (deceleration down- shift)
+</font></div>
+</td>
+    <td>
+<a name="wp1058925"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;To assure drive stability, automatically downshifts from 4GR to 3GR
+</font></div>
+</td>
+    <td colspan="1" rowspan="3">
+<a name="wp1058928"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058962"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+In 3GR deceleration, speed goes below coast-down set speed (deceleration down- shift)
+</font></div>
+</td>
+    <td>
+<a name="wp1058965"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;To assure drive stability, automatically downshifts from 3GR to 1GR
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058952"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+In 2GR deceleration, speed goes below coast-down set speed (deceleration down- shift)
+</font></div>
+</td>
+    <td>
+<a name="wp1058955"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;To assure drive stability, automatically downshifts from 2GR to 1GR
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1059019"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Shift diagram
+</b></font></h2>
+
+<a name="wp1059029"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><p><img src="images/DDA517ZT4017.png" height="394" width="644" border="0" hspace="0" vspace="0"></p><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+
+
+</font></p>
+
+<a name="wp1059614"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ 
+</font></p>
+  </body>
+</html>

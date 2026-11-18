@@ -1,0 +1,2221 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.2.1206">
+    <meta name="TEMPLATEBASE" content="Simple HTML">
+    <meta name="LASTUPDATED" content="01/25/07 13:35:45">
+    <title>ON-BOARD DIAGNOSTIC FUNCTION</title>
+  </head>
+
+  <body link="#3366CC" vlink="#9999CC" text="#000000" alink="#0000CC" bgcolor="#FFFFFF">
+<a name="wp1025486"> </a><h1><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="5"><b>
+ON-BOARD DIAGNOSTIC FUNCTION
+</b></font></div></h1>
+<hr>
+
+<a name="wp1058562"> </a><p><div align="right"><font color="#000000" face="Arial" size="2">
+id080200100500
+</font></div></p>
+
+<a name="wp1063664"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Self-Malfunction Diagnostic Function
+</b></font></h2>
+
+<a name="wp1058573"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The self-malfunction diagnosis function determines that there is a malfunction, outputs a signal as a DTC to the DLC-2, and at the same time, flashes the air bag system warning light to advise the driver of a malfunction.
+</font></div>
+
+<a name="wp1058589"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The air bag system warning light illuminates or flashes to indicate a single DTC according to the present malfunction. (If there is more than one present malfunction, only one DTC will be displayed according to the preset priority ranking.)
+</font></div>
+
+<a name="wp1058599"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The air bag system warning light will flash the DTC pattern for five cycles, and then will remain illuminated until the ignition switch is turned to the LOCK position.
+</font></div>
+
+<a name="wp1058609"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;If both of the driver-side air bag module connectors are disconnected when the SAS control module configuration is performed, the air bag system warning light will flash. <b>Approx. 15 s</b> after the connectors are properly reconnected, the light will go out.
+</font></div>
+
+<a name="wp1058629"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The self-malfunction diagnostic function consists of two functions: present malfunction diagnostic and past malfunction diagnostic.
+</font></div>
+
+<a name="wp1058640"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+DTC table</b></font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th colspan="3" rowspan="1">
+<a name="wp1058754"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+DTC
+</b></font></div></p>
+</th>
+    <th colspan="1" rowspan="2">
+<a name="wp1058760"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Malfunction location
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="center">    <th>
+<a name="wp1058840"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+WDS display
+</b></font></div></p>
+</th>
+    <th colspan="2" rowspan="1">
+<a name="wp1058843"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Air bag system warning light
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058648"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1231
+</font></div>
+</td>
+    <td>
+<a name="wp1058650"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+13
+</font></div>
+</td>
+    <td>
+<a name="wp1058706"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<img src="images/DDJ802ZW1010.png" height="45" width="141" border="0" hspace="0" vspace="0">
+
+
+
+</font></p>
+</td>
+    <td>
+<a name="wp1058709"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SAS control module activation (deployment) control freeze
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058783"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1317
+</font></div>
+</td>
+    <td>
+<a name="wp1058786"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1058789"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Continuously illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1058792"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+The power supply voltage increases (16.1 V or more).
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058796"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1318
+</font></div>
+</td>
+    <td>
+<a name="wp1058799"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1058802"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Continuously illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1058805"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+The power supply voltage decreases (less than 9 V).
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1058809"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1342
+</font></div>
+</td>
+    <td>
+<a name="wp1058812"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+12
+</font></div>
+</td>
+    <td>
+<a name="wp1058815"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<img src="images/DDJ802ZW1011.png" height="45" width="134" border="0" hspace="0" vspace="0">
+
+
+
+</font></p>
+</td>
+    <td>
+<a name="wp1058818"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SAS control module
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058825"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1058828"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Continuously illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1058831"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SAS control module (DTC 12 detection circuit malfunction)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1058978"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1869
+</font></div>
+</td>
+    <td>
+<a name="wp1058981"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1058984"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Continuously illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1058987"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Air bag system warning light system circuit open
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058994"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1058997"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Does not illuminate
+</font></div>
+</td>
+    <td>
+<a name="wp1059000"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Air bag system warning light system circuit short to ground
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059039"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1870
+</font></div>
+</td>
+    <td>
+<a name="wp1059042"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1059045"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Continuously illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1059048"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Air bag system warning light system circuit short to power supply
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059072"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1877
+</font></div>
+</td>
+    <td colspan="1" rowspan="3">
+<a name="wp1059075"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+33
+</font></div>
+</td>
+    <td colspan="1" rowspan="3">
+<a name="wp1059078"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<img src="images/DDJ802ZW1012.png" height="45" width="162" border="0" hspace="0" vspace="0">
+
+
+
+</font></p>
+</td>
+    <td>
+<a name="wp1059081"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Driver-side pre-tensioner seat belt system circuit resistance high
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059103"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1878
+</font></div>
+</td>
+    <td>
+<a name="wp1059112"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Driver-side pre-tensioner seat belt system circuit short to power supply
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059090"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1879
+</font></div>
+</td>
+    <td>
+<a name="wp1059099"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Driver-side pre-tensioner seat belt system circuit short to ground
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059164"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1881
+</font></div>
+</td>
+    <td colspan="1" rowspan="3">
+<a name="wp1059167"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+34
+</font></div>
+</td>
+    <td colspan="1" rowspan="3">
+<a name="wp1059170"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<img src="images/DDJ802ZW1013.png" height="45" width="175" border="0" hspace="0" vspace="0">
+
+
+
+</font></p>
+</td>
+    <td>
+<a name="wp1059173"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passenger-side pre-tensioner seat belt system circuit resistance high
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059195"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1882
+</font></div>
+</td>
+    <td>
+<a name="wp1059204"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passenger-side pre-tensioner seat belt system circuit short to power supply
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059182"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1883
+</font></div>
+</td>
+    <td>
+<a name="wp1059191"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passenger-side pre-tensioner seat belt system circuit short to ground
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059256"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1885
+</font></div>
+</td>
+    <td>
+<a name="wp1059259"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+33
+</font></div>
+</td>
+    <td>
+<a name="wp1059262"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<img src="images/DDJ802ZW1012.png" height="45" width="162" border="0" hspace="0" vspace="0">
+
+
+
+</font></p>
+</td>
+    <td>
+<a name="wp1059265"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Driver-side pre-tensioner seat belt system circuit resistance low
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059298"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1886
+</font></div>
+</td>
+    <td>
+<a name="wp1059301"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+34
+</font></div>
+</td>
+    <td>
+<a name="wp1059304"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<img src="images/DDJ802ZW1013.png" height="45" width="175" border="0" hspace="0" vspace="0">
+
+
+
+</font></p>
+</td>
+    <td>
+<a name="wp1059307"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passenger-side pre-tensioner seat belt system circuit resistance low
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059340"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1916
+</font></div>
+</td>
+    <td>
+<a name="wp1059343"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+19
+</font></div>
+</td>
+    <td>
+<a name="wp1059346"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<img src="images/DDJ802ZW1014.png" height="45" width="208" border="0" hspace="0" vspace="0">
+
+
+
+</font></p>
+</td>
+    <td>
+<a name="wp1059349"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Driver-side air bag module system circuit short to power supply
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059391"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1925
+</font></div>
+</td>
+    <td>
+<a name="wp1059394"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+21
+</font></div>
+</td>
+    <td>
+<a name="wp1059397"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<img src="images/DDJ802ZW1015.png" height="45" width="129" border="0" hspace="0" vspace="0">
+
+
+
+</font></p>
+</td>
+    <td>
+<a name="wp1059400"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passenger-side air bag module system circuit short to power supply
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059432"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1932
+</font></div>
+</td>
+    <td>
+<a name="wp1059435"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+19
+</font></div>
+</td>
+    <td>
+<a name="wp1059438"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<img src="images/DDJ802ZW1014.png" height="45" width="208" border="0" hspace="0" vspace="0">
+
+
+
+</font></p>
+</td>
+    <td>
+<a name="wp1059441"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Driver-side air bag module system circuit resistance high
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059473"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1933
+</font></div>
+</td>
+    <td>
+<a name="wp1059476"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+21
+</font></div>
+</td>
+    <td>
+<a name="wp1059479"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<img src="images/DDJ802ZW1015.png" height="45" width="129" border="0" hspace="0" vspace="0">
+
+
+
+</font></p>
+</td>
+    <td>
+<a name="wp1059482"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passenger-side air bag module system circuit resistance high
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059514"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1934
+</font></div>
+</td>
+    <td>
+<a name="wp1059517"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+19
+</font></div>
+</td>
+    <td>
+<a name="wp1059520"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<img src="images/DDJ802ZW1014.png" height="45" width="208" border="0" hspace="0" vspace="0">
+
+
+
+</font></p>
+</td>
+    <td>
+<a name="wp1059523"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Driver-side air bag module system circuit resistance low
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059555"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1935
+</font></div>
+</td>
+    <td>
+<a name="wp1059558"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+21
+</font></div>
+</td>
+    <td>
+<a name="wp1059561"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<img src="images/DDJ802ZW1015.png" height="45" width="129" border="0" hspace="0" vspace="0">
+
+
+
+</font></p>
+</td>
+    <td>
+<a name="wp1059564"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passenger-side air bag module system circuit resistance low
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059596"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1936
+</font></div>
+</td>
+    <td>
+<a name="wp1059599"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+19
+</font></div>
+</td>
+    <td>
+<a name="wp1059602"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<img src="images/DDJ802ZW1014.png" height="45" width="208" border="0" hspace="0" vspace="0">
+
+
+
+</font></p>
+</td>
+    <td>
+<a name="wp1059605"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Driver-side air bag module system circuit short to ground
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059637"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1938
+</font></div>
+</td>
+    <td>
+<a name="wp1059640"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+21
+</font></div>
+</td>
+    <td>
+<a name="wp1059643"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<img src="images/DDJ802ZW1015.png" height="45" width="129" border="0" hspace="0" vspace="0">
+
+
+
+</font></p>
+</td>
+    <td>
+<a name="wp1059646"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passenger-side air bag module system circuit short to ground
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059678"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1992
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1059681"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+22
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1059684"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<img src="images/DDJ802ZW1016.png" height="45" width="141" border="0" hspace="0" vspace="0">
+
+
+
+</font></p>
+</td>
+    <td>
+<a name="wp1059687"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Driver-side side air bag module circuit short to power supply
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059722"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1993
+</font></div>
+</td>
+    <td>
+<a name="wp1059731"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Driver-side side air bag module circuit short to body ground
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059709"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1994
+</font></div>
+</td>
+    <td>
+<a name="wp1059718"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Driver-side side air bag module circuit resistance high
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059696"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1995
+</font></div>
+</td>
+    <td>
+<a name="wp1059705"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Driver-side side air bag module circuit resistance low
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059791"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1996
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1059794"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+23
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1059797"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<img src="images/DDJ802ZW1017.png" height="45" width="152" border="0" hspace="0" vspace="0">
+
+
+
+</font></p>
+</td>
+    <td>
+<a name="wp1059800"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passenger-side side air bag module circuit short to power supply
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059835"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1997
+</font></div>
+</td>
+    <td>
+<a name="wp1059844"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passenger-side side air bag module circuit short to body ground
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059822"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1998
+</font></div>
+</td>
+    <td>
+<a name="wp1059831"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passenger-side side air bag module circuit resistance high
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059809"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1999
+</font></div>
+</td>
+    <td>
+<a name="wp1059818"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passenger-side side air bag module circuit resistance low
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059904"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B2228
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1059907"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+19
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1059910"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<img src="images/DDJ802ZW1014.png" height="45" width="208" border="0" hspace="0" vspace="0">
+
+
+
+</font></p>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1059913"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Driver-side air bag module assembly incorrect
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059948"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B2230
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059935"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B2232
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059922"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B2234
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060009"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B2229
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1060012"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+21
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1060015"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<img src="images/DDJ802ZW1015.png" height="45" width="129" border="0" hspace="0" vspace="0">
+
+
+
+</font></p>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1060018"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passenger-side air bag module assembly incorrect
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060053"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B2231
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060040"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B2233
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060027"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B2235
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060104"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B2444
+</font></div>
+</td>
+    <td>
+<a name="wp1060107"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+43
+</font></div>
+</td>
+    <td>
+<a name="wp1060110"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<img src="images/DDJ802ZW1019.png" height="45" width="176" border="0" hspace="0" vspace="0">
+
+
+
+</font></p>
+</td>
+    <td>
+<a name="wp1060113"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Driver-side side air bag sensor internal circuit malfunction
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060145"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B2445
+</font></div>
+</td>
+    <td>
+<a name="wp1060148"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+44
+</font></div>
+</td>
+    <td>
+<a name="wp1060151"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<img src="images/DDJ802ZW1020.png" height="45" width="185" border="0" hspace="0" vspace="0">
+
+
+
+</font></p>
+</td>
+    <td>
+<a name="wp1060154"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passenger-side side air bag sensor internal circuit malfunction
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060186"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B2477
+</font></div>
+</td>
+    <td>
+<a name="wp1060189"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+54
+</font></div>
+</td>
+    <td>
+<a name="wp1060192"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<img src="images/DDJ802ZW1021.png" height="45" width="196" border="0" hspace="0" vspace="0">
+
+
+
+</font></p>
+</td>
+    <td>
+<a name="wp1060195"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Configuration error
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060226"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B2773
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1060229"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+24
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1060232"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<img src="images/DDJ802ZW1022.png" height="45" width="162" border="0" hspace="0" vspace="0">
+
+
+
+</font></p>
+</td>
+    <td>
+<a name="wp1060235"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Driver-side curtain air bag module circuit resistance low
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060270"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B2774
+</font></div>
+</td>
+    <td>
+<a name="wp1060279"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Driver-side curtain air bag module circuit resistance high
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060257"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B2775
+</font></div>
+</td>
+    <td>
+<a name="wp1060266"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Driver-side curtain air bag module circuit short to body ground
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060244"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B2776
+</font></div>
+</td>
+    <td>
+<a name="wp1060253"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Driver-side curtain air bag module circuit short to power supply
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060339"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B2777
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1060342"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+25
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1060345"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<img src="images/DDJ802ZW1023.png" height="45" width="175" border="0" hspace="0" vspace="0">
+
+
+
+</font></p>
+</td>
+    <td>
+<a name="wp1060348"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passenger-side curtain air bag module circuit resistance low
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060383"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B2778
+</font></div>
+</td>
+    <td>
+<a name="wp1060392"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passenger-side curtain air bag module circuit resistance high
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060370"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B2779
+</font></div>
+</td>
+    <td>
+<a name="wp1060379"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passenger-side curtain air bag module circuit short to body ground
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060357"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B2780
+</font></div>
+</td>
+    <td>
+<a name="wp1060366"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passenger-side curtain air bag module circuit short to power supply
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060452"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U2017
+</font></div>
+</td>
+    <td>
+<a name="wp1060455"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+43
+</font></div>
+</td>
+    <td>
+<a name="wp1060458"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<img src="images/DDJ802ZW1019.png" height="45" width="176" border="0" hspace="0" vspace="0">
+
+
+
+</font></p>
+</td>
+    <td>
+<a name="wp1060461"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Driver-side side air bag sensor communication error
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060493"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U2018
+</font></div>
+</td>
+    <td>
+<a name="wp1060496"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+44
+</font></div>
+</td>
+    <td>
+<a name="wp1060499"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<img src="images/DDJ802ZW1020.png" height="45" width="185" border="0" hspace="0" vspace="0">
+
+
+
+</font></p>
+</td>
+    <td>
+<a name="wp1060502"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passenger-side side air bag sensor communication error
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+</b></font></p>
+
+<a name="wp1060536"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+PID/Data Monitoring Function
+</b></font></h2>
+
+<a name="wp1060548"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;By using the PID/data monitoring function, the monitored item of the input/output signal, as set on the SAS control module, can be freely selected and read out in real-time. 
+</font></div>
+
+<a name="wp1060567"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;A WDS or equivalent is used to read out PID/data monitor information.
+</font></div>
+
+<a name="wp1060579"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+PID/data monitor table</b></font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th>
+<a name="wp1060695"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+PID name (Definition)
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1060697"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Unit/State
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1060699"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Detection state
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1060701"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+SAS control module terminal
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060589"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCNT_RCM
+</font></div>
+
+<a name="wp1060807"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Number of continuous DTCs)
+</font></div>
+</td>
+    <td>
+<a name="wp1060591"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1060647"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;DTC is detected: 1-255
+</font></div>
+
+<a name="wp1060833"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;DTC is not detected: 0
+</font></div>
+</td>
+    <td>
+<a name="wp1060650"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060724"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+D_CRSH_S
+</font></div>
+
+<a name="wp1060857"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(Driver-side side air bag sensor state)
+</font></div>
+</td>
+    <td>
+<a name="wp1060727"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OK/
+</font></div>
+
+<a name="wp1060870"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+COMM FAIL/
+</font></div>
+
+<a name="wp1060877"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+INT FAIL
+</font></div>
+</td>
+    <td>
+<a name="wp1060730"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Sensor normal: OK
+</font></div>
+
+<a name="wp1060896"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Sensor communication error: COMM FAIL
+</font></div>
+
+<a name="wp1060906"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Sensor internal circuit abnormal: INT FAIL
+</font></div>
+</td>
+    <td>
+<a name="wp1060733"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1S, 1R
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060737"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+D_PTENSFLT
+</font></div>
+
+<a name="wp1060928"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Driver-side pre-tensioner seat belt circuit state)
+</font></div>
+</td>
+    <td>
+<a name="wp1060740"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SHRT GND/
+</font></div>
+
+<a name="wp1060942"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SHRT B+/
+</font></div>
+
+<a name="wp1060950"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OPEN/
+</font></div>
+
+<a name="wp1060957"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SQ_LOWRES/
+</font></div>
+
+<a name="wp1060966"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+NORMAL
+</font></div>
+</td>
+    <td>
+<a name="wp1060743"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness short to ground: SHRT GND
+</font></div>
+
+<a name="wp1060985"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness short to power supply: SHRT B+
+</font></div>
+
+<a name="wp1060996"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness circuit open: OPEN
+</font></div>
+
+<a name="wp1061006"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Pre-tensioner seat belt circuit resistance low: SQ_LOWRES
+</font></div>
+
+<a name="wp1061019"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness normal: NORMAL
+</font></div>
+</td>
+    <td>
+<a name="wp1060746"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1E, 1I
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060750"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+DS_AB_ST
+</font></div>
+
+<a name="wp1061043"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(Driver-side side air bag module circuit state)
+</font></div>
+</td>
+    <td>
+<a name="wp1060753"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SHRT GND/
+</font></div>
+
+<a name="wp1061056"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SHRT B+/
+</font></div>
+
+<a name="wp1061064"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OPEN/
+</font></div>
+
+<a name="wp1061071"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SQ_LOWRES/
+</font></div>
+
+<a name="wp1061080"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+NORMAL
+</font></div>
+</td>
+    <td>
+<a name="wp1060756"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness short to ground: SHRT GND
+</font></div>
+
+<a name="wp1061099"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness short to power supply: SHRT B+
+</font></div>
+
+<a name="wp1061110"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness circuit open: OPEN
+</font></div>
+
+<a name="wp1061120"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Pre-tensioner seat belt circuit resistance low: SQ_LOWRES
+</font></div>
+
+<a name="wp1061133"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness normal: NORMAL
+</font></div>
+</td>
+    <td>
+<a name="wp1060759"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1M, 1Q
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060763"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+DS_CURT_ST
+</font></div>
+
+<a name="wp1061157"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(Driver-side curtain air bag module circuit state)
+</font></div>
+</td>
+    <td>
+<a name="wp1060766"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SHRT GND/
+</font></div>
+
+<a name="wp1061170"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SHRT B+/
+</font></div>
+
+<a name="wp1061178"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OPEN/
+</font></div>
+
+<a name="wp1061185"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SQ_LOWRES/
+</font></div>
+
+<a name="wp1061194"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+NORMAL
+</font></div>
+</td>
+    <td>
+<a name="wp1060769"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness short to ground: SHRT GND
+</font></div>
+
+<a name="wp1061213"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness short to power supply: SHRT B+
+</font></div>
+
+<a name="wp1061224"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness circuit open: OPEN
+</font></div>
+
+<a name="wp1061234"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Pre-tensioner seat belt circuit resistance low: SQ_LOWRES
+</font></div>
+
+<a name="wp1061247"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness normal: NORMAL
+</font></div>
+</td>
+    <td>
+<a name="wp1060772"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1C, 1G
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061260"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+DSB_P_ST
+</font></div>
+
+<a name="wp1061284"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Driver-side pre-tensioner seat belt circuit state)
+</font></div>
+</td>
+    <td>
+<a name="wp1061263"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SHRT GND/
+</font></div>
+
+<a name="wp1061298"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SHRT B+/
+</font></div>
+
+<a name="wp1061306"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OPEN/
+</font></div>
+
+<a name="wp1061313"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SQ_LOWRES/
+</font></div>
+
+<a name="wp1061322"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+NORMAL
+</font></div>
+</td>
+    <td>
+<a name="wp1061266"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness short to ground: SHRT GND
+</font></div>
+
+<a name="wp1061341"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness short to power supply: SHRT B+
+</font></div>
+
+<a name="wp1061352"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness circuit open: OPEN
+</font></div>
+
+<a name="wp1061362"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Pre-tensioner seat belt circuit resistance low: SQ_LOWRES
+</font></div>
+
+<a name="wp1061375"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness normal: NORMAL
+</font></div>
+</td>
+    <td>
+<a name="wp1061269"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1E, 1I
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061388"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+DS1_STAT
+</font></div>
+
+<a name="wp1061410"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Driver-side air bag module circuit state)
+</font></div>
+</td>
+    <td>
+<a name="wp1061391"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SHRT GND/
+</font></div>
+
+<a name="wp1061423"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SHRT B+/
+</font></div>
+
+<a name="wp1061431"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OPEN/
+</font></div>
+
+<a name="wp1061438"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SQ_LOWRES/
+</font></div>
+
+<a name="wp1061447"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+NORMAL
+</font></div>
+</td>
+    <td>
+<a name="wp1061394"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness short to ground: SHRT GND
+</font></div>
+
+<a name="wp1061466"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness short to power supply: SHRT B+
+</font></div>
+
+<a name="wp1061477"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness circuit open: OPEN
+</font></div>
+
+<a name="wp1061487"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Pre-tensioner seat belt circuit resistance low: SQ_LOWRES
+</font></div>
+
+<a name="wp1061500"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness normal: NORMAL
+</font></div>
+</td>
+    <td>
+<a name="wp1061397"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2J, 2N
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061513"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OD_D_CRSH
+</font></div>
+
+<a name="wp1061537"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(On demand driver-side side air bag sensor state)
+</font></div>
+</td>
+    <td>
+<a name="wp1061516"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OK/
+</font></div>
+
+<a name="wp1061550"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+COMM FAIL/
+</font></div>
+
+<a name="wp1061557"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+INT FAIL
+</font></div>
+</td>
+    <td>
+<a name="wp1061519"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Sensor normal: OK
+</font></div>
+
+<a name="wp1061576"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Sensor communication error: COMM FAIL
+</font></div>
+
+<a name="wp1061586"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Sensor internal circuit abnormal: INT FAIL
+</font></div>
+</td>
+    <td>
+<a name="wp1061522"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1R, 1S
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061599"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OD_D_CURT
+</font></div>
+
+<a name="wp1061623"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(On demand driver-side curtain air bag module circuit state)
+</font></div>
+</td>
+    <td>
+<a name="wp1061602"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SHRT GND/
+</font></div>
+
+<a name="wp1061636"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SHRT B+/
+</font></div>
+
+<a name="wp1061644"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OPEN/
+</font></div>
+
+<a name="wp1061651"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SQ_LOWRES/
+</font></div>
+
+<a name="wp1061660"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+NORMAL
+</font></div>
+</td>
+    <td>
+<a name="wp1061605"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness short to ground: SHRT GND
+</font></div>
+
+<a name="wp1061679"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness short to power supply: SHRT B+
+</font></div>
+
+<a name="wp1061690"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness circuit open: OPEN
+</font></div>
+
+<a name="wp1061700"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Pre-tensioner seat belt circuit resistance low: SQ_LOWRES
+</font></div>
+
+<a name="wp1061713"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness normal: NORMAL
+</font></div>
+</td>
+    <td>
+<a name="wp1061608"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1C, 1G
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061726"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OD_DAB1_ST
+</font></div>
+
+<a name="wp1061750"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (On demand driver-side air bag module circuit state)
+</font></div>
+</td>
+    <td>
+<a name="wp1061729"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SHRT GND/
+</font></div>
+
+<a name="wp1061763"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SHRT B+/
+</font></div>
+
+<a name="wp1061771"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OPEN/
+</font></div>
+
+<a name="wp1061778"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SQ_LOWRES/
+</font></div>
+
+<a name="wp1061787"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+NORMAL
+</font></div>
+</td>
+    <td>
+<a name="wp1061732"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness short to ground: SHRT GND
+</font></div>
+
+<a name="wp1061806"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness short to power supply: SHRT B+
+</font></div>
+
+<a name="wp1061817"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness circuit open: OPEN
+</font></div>
+
+<a name="wp1061827"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Pre-tensioner seat belt circuit resistance low: SQ_LOWRES
+</font></div>
+
+<a name="wp1061840"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness normal: NORMAL
+</font></div>
+</td>
+    <td>
+<a name="wp1061735"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2J, 2N
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061853"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OD_DSAB_ST
+</font></div>
+
+<a name="wp1061877"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(On demand driver-side side air bag module circuit state)
+</font></div>
+</td>
+    <td>
+<a name="wp1061856"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SHRT GND/
+</font></div>
+
+<a name="wp1061890"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SHRT B+/
+</font></div>
+
+<a name="wp1061898"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OPEN/
+</font></div>
+
+<a name="wp1061905"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SQ_LOWRES/
+</font></div>
+
+<a name="wp1061914"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+NORMAL
+</font></div>
+</td>
+    <td>
+<a name="wp1061859"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness short to ground: SHRT GND
+</font></div>
+
+<a name="wp1061933"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness short to power supply: SHRT B+
+</font></div>
+
+<a name="wp1061944"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness circuit open: OPEN
+</font></div>
+
+<a name="wp1061954"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Pre-tensioner seat belt circuit resistance low: SQ_LOWRES
+</font></div>
+
+<a name="wp1061967"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness normal: NORMAL
+</font></div>
+</td>
+    <td>
+<a name="wp1061862"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1M, 1Q
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061980"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OD_F_CRSH
+</font></div>
+
+<a name="wp1062004"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (On demand crash zone sensor state)
+</font></div>
+</td>
+    <td>
+<a name="wp1061983"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OK/
+</font></div>
+
+<a name="wp1062016"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+COMM FAIL/
+</font></div>
+
+<a name="wp1062023"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+INT FAIL
+</font></div>
+</td>
+    <td>
+<a name="wp1061986"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Sensor normal: OK
+</font></div>
+
+<a name="wp1062042"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Sensor communication error: COMM FAIL
+</font></div>
+
+<a name="wp1062052"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Sensor internal circuit abnormal: INT FAIL
+</font></div>
+</td>
+    <td>
+<a name="wp1061989"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1J, 1K
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062065"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OD_P_CRSH
+</font></div>
+
+<a name="wp1062089"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(On demand passenger-side side air bag sensor state)
+</font></div>
+</td>
+    <td>
+<a name="wp1062068"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OK/
+</font></div>
+
+<a name="wp1062102"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+COMM FAIL/
+</font></div>
+
+<a name="wp1062109"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+INT FAIL
+</font></div>
+</td>
+    <td>
+<a name="wp1062071"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Sensor normal: OK
+</font></div>
+
+<a name="wp1062128"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Sensor communication error: COMM FAIL
+</font></div>
+
+<a name="wp1062138"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Sensor internal circuit abnormal: INT FAIL
+</font></div>
+</td>
+    <td>
+<a name="wp1062074"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1N, 1O
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062151"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OD_P_CURT
+</font></div>
+
+<a name="wp1062175"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(On demand passenger-side curtain air bag module circuit state)
+</font></div>
+</td>
+    <td>
+<a name="wp1062154"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SHRT GND/
+</font></div>
+
+<a name="wp1062188"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SHRT B+/
+</font></div>
+
+<a name="wp1062196"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OPEN/
+</font></div>
+
+<a name="wp1062203"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SQ_LOWRES/
+</font></div>
+
+<a name="wp1062212"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+NORMAL
+</font></div>
+</td>
+    <td>
+<a name="wp1062157"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness short to ground: SHRT GND
+</font></div>
+
+<a name="wp1062231"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness short to power supply: SHRT B+
+</font></div>
+
+<a name="wp1062242"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness circuit open: OPEN
+</font></div>
+
+<a name="wp1062252"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Pre-tensioner seat belt circuit resistance low: SQ_LOWRES
+</font></div>
+
+<a name="wp1062265"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness normal: NORMAL
+</font></div>
+</td>
+    <td>
+<a name="wp1062160"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1D, 1H
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062278"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OD_PAB1_ST
+</font></div>
+
+<a name="wp1062302"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (On demand passenger-side air bag module circuit state)
+</font></div>
+</td>
+    <td>
+<a name="wp1062281"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SHRT GND/
+</font></div>
+
+<a name="wp1062315"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SHRT B+/
+</font></div>
+
+<a name="wp1062323"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OPEN/
+</font></div>
+
+<a name="wp1062330"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SQ_LOWRES/
+</font></div>
+
+<a name="wp1062339"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+NORMAL
+</font></div>
+</td>
+    <td>
+<a name="wp1062284"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness short to ground: SHRT GND
+</font></div>
+
+<a name="wp1062358"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness short to power supply: SHRT B+
+</font></div>
+
+<a name="wp1062369"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness circuit open: OPEN
+</font></div>
+
+<a name="wp1062379"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Pre-tensioner seat belt circuit resistance low: SQ_LOWRES
+</font></div>
+
+<a name="wp1062392"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness normal: NORMAL
+</font></div>
+</td>
+    <td>
+<a name="wp1062287"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2R, 2V
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062405"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OD_PSAB_ST
+</font></div>
+
+<a name="wp1062429"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(On demand passenger-side side air bag module circuit state)
+</font></div>
+</td>
+    <td>
+<a name="wp1062408"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SHRT GND/
+</font></div>
+
+<a name="wp1062442"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SHRT B+/
+</font></div>
+
+<a name="wp1062450"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OPEN/
+</font></div>
+
+<a name="wp1062457"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SQ_LOWRES/
+</font></div>
+
+<a name="wp1062466"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+NORMAL
+</font></div>
+</td>
+    <td>
+<a name="wp1062411"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness short to ground: SHRT GND
+</font></div>
+
+<a name="wp1062485"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness short to power supply: SHRT B+
+</font></div>
+
+<a name="wp1062496"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness circuit open: OPEN
+</font></div>
+
+<a name="wp1062506"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Pre-tensioner seat belt circuit resistance low: SQ_LOWRES
+</font></div>
+
+<a name="wp1062519"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness normal: NORMAL
+</font></div>
+</td>
+    <td>
+<a name="wp1062414"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1P, 1T
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062532"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P_CRSH_S
+</font></div>
+
+<a name="wp1062556"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(Passenger-side side air bag sensor state)
+</font></div>
+</td>
+    <td>
+<a name="wp1062535"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OK/
+</font></div>
+
+<a name="wp1062569"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+COMM FAIL/
+</font></div>
+
+<a name="wp1062576"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+INT FAIL
+</font></div>
+</td>
+    <td>
+<a name="wp1062538"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Sensor normal: OK
+</font></div>
+
+<a name="wp1062595"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Sensor communication error: COMM FAIL
+</font></div>
+
+<a name="wp1062605"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Sensor internal circuit abnormal: INT FAIL
+</font></div>
+</td>
+    <td>
+<a name="wp1062541"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1N, 1O
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062618"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P_PTESFLT
+</font></div>
+
+<a name="wp1062640"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Passenger-side pre-tensioner seat belt circuit state)
+</font></div>
+</td>
+    <td>
+<a name="wp1062621"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SHRT GND/
+</font></div>
+
+<a name="wp1062654"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SHRT B+/
+</font></div>
+
+<a name="wp1062662"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OPEN/
+</font></div>
+
+<a name="wp1062669"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SQ_LOWRES/
+</font></div>
+
+<a name="wp1062678"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+NORMAL
+</font></div>
+</td>
+    <td>
+<a name="wp1062624"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness short to ground: SHRT GND
+</font></div>
+
+<a name="wp1062697"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness short to power supply: SHRT B+
+</font></div>
+
+<a name="wp1062708"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness circuit open: OPEN
+</font></div>
+
+<a name="wp1062718"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Pre-tensioner seat belt circuit resistance low: SQ_LOWRES
+</font></div>
+
+<a name="wp1062731"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness normal: NORMAL
+</font></div>
+</td>
+    <td>
+<a name="wp1062627"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1A, 1B
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062744"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+PS_AB_ST
+</font></div>
+
+<a name="wp1062768"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(Passenger-side side air bag module circuit state)
+</font></div>
+</td>
+    <td>
+<a name="wp1062747"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SHRT GND/
+</font></div>
+
+<a name="wp1062781"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SHRT B+/
+</font></div>
+
+<a name="wp1062789"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OPEN/
+</font></div>
+
+<a name="wp1062796"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SQ_LOWRES/
+</font></div>
+
+<a name="wp1062805"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+NORMAL
+</font></div>
+</td>
+    <td>
+<a name="wp1062750"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness short to ground: SHRT GND
+</font></div>
+
+<a name="wp1062824"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness short to power supply: SHRT B+
+</font></div>
+
+<a name="wp1062835"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness circuit open: OPEN
+</font></div>
+
+<a name="wp1062845"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Pre-tensioner seat belt circuit resistance low: SQ_LOWRES
+</font></div>
+
+<a name="wp1062858"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness normal: NORMAL
+</font></div>
+</td>
+    <td>
+<a name="wp1062753"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1P, 1T
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062871"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+PS_CURT_ST
+</font></div>
+
+<a name="wp1062895"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(Passenger-side curtain air bag module circuit state)
+</font></div>
+</td>
+    <td>
+<a name="wp1062874"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SHRT GND/
+</font></div>
+
+<a name="wp1062908"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SHRT B+/
+</font></div>
+
+<a name="wp1062916"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OPEN/
+</font></div>
+
+<a name="wp1062923"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SQ_LOWRES/
+</font></div>
+
+<a name="wp1062932"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+NORMAL
+</font></div>
+</td>
+    <td>
+<a name="wp1062877"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness short to ground: SHRT GND
+</font></div>
+
+<a name="wp1062951"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness short to power supply: SHRT B+
+</font></div>
+
+<a name="wp1062962"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness circuit open: OPEN
+</font></div>
+
+<a name="wp1062972"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Pre-tensioner seat belt circuit resistance low: SQ_LOWRES
+</font></div>
+
+<a name="wp1062985"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness normal: NORMAL
+</font></div>
+</td>
+    <td>
+<a name="wp1062880"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1D, 1H
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062998"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+PSB_P_ST
+</font></div>
+
+<a name="wp1063022"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Passenger-side pre-tensioner seat belt circuit state)
+</font></div>
+</td>
+    <td>
+<a name="wp1063001"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SHRT GND/
+</font></div>
+
+<a name="wp1063036"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SHRT B+/
+</font></div>
+
+<a name="wp1063044"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OPEN/
+</font></div>
+
+<a name="wp1063051"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SQ_LOWRES/
+</font></div>
+
+<a name="wp1063060"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+NORMAL
+</font></div>
+</td>
+    <td>
+<a name="wp1063004"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness short to ground: SHRT GND
+</font></div>
+
+<a name="wp1063079"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness short to power supply: SHRT B+
+</font></div>
+
+<a name="wp1063090"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness circuit open: OPEN
+</font></div>
+
+<a name="wp1063100"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Pre-tensioner seat belt circuit resistance low: SQ_LOWRES
+</font></div>
+
+<a name="wp1063113"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness normal: NORMAL
+</font></div>
+</td>
+    <td>
+<a name="wp1063007"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1A, 1B
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063126"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+PS1_STAT
+</font></div>
+
+<a name="wp1063148"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Passenger-side air bag module circuit state)
+</font></div>
+</td>
+    <td>
+<a name="wp1063129"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SHRT GND/
+</font></div>
+
+<a name="wp1063161"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SHRT B+/
+</font></div>
+
+<a name="wp1063169"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OPEN/
+</font></div>
+
+<a name="wp1063176"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SQ_LOWRES/
+</font></div>
+
+<a name="wp1063185"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+NORMAL
+</font></div>
+</td>
+    <td>
+<a name="wp1063132"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness short to ground: SHRT GND
+</font></div>
+
+<a name="wp1063204"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness short to power supply: SHRT B+
+</font></div>
+
+<a name="wp1063215"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness circuit open: OPEN
+</font></div>
+
+<a name="wp1063225"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Pre-tensioner seat belt circuit resistance low: SQ_LOWRES
+</font></div>
+
+<a name="wp1063238"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Related wiring harness normal: NORMAL
+</font></div>
+</td>
+    <td>
+<a name="wp1063135"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2R, 2V
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063251"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+VBATT
+</font></div>
+
+<a name="wp1063271"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Battery voltage)
+</font></div>
+</td>
+    <td>
+<a name="wp1063254"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+V
+</font></div>
+</td>
+    <td>
+<a name="wp1063257"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Under any condition: B+
+</font></div>
+</td>
+    <td>
+<a name="wp1063260"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2U
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+</b></font></p>
+
+<a name="wp1063408"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ 
+</font></p>
+  </body>
+</html>

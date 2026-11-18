@@ -1,0 +1,261 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DTC C1141, C1142, C1143, C1144, C1233, C1234, C1235, C1236</title>
+</head>
+<body><a name="id040200806400"></a><p class="servinfo-title"><span class="servinfo-head"></span>DTC C1141, C1142, C1143, C1144, C1233, C1234, C1235, C1236</p>
+<hr>
+<p class="servinfo-title-id" align="right">id040200806400</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>DTC</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody"><span>C1141, C1234</span></div>
+<div class="tbody"><span>C1142, C1233</span></div>
+<div class="tbody"><span>C1143, C1235</span></div>
+<div class="tbody"><span>C1144, C1236</span></div>
+</td>
+<td id="" align="left">
+<div class="tbody"><span>RF ABS wheel-speed sensor/sensor rotor</span></div>
+<div class="tbody"><span>LF ABS wheel-speed sensor/sensor rotor</span></div>
+<div class="tbody"><span>RR ABS wheel-speed sensor/sensor rotor</span></div>
+<div class="tbody"><span>LR ABS wheel-speed sensor/sensor rotor</span></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" colspan="2">
+<div class="tbody"><span>DETECTION CONDITION</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  C1141, C1142, C1143, C1144: </div>
+<dl>
+<dd class="list">
+<div class="list">―  Abnormal sensor output due to chipping of sensor rotor teeth, etc. is detected</div>
+</dd>
+</dl>
+<div class="list">•  C1234, C1233, C1235, C1236: </div>
+<dl>
+<dd class="list">
+<div class="list">―  Abnormal sensor output is detected on any of four vehicle wheels when the vehicle goes from start to a speed of <span>10 km/h {6.2 mph}</span></div>
+<div class="list">―  Greater than specified amount of ABS demand occurs from front ABS wheel sensors when vehicle is started</div>
+<div class="list">―  ABS control operates for <span>28 s or more</span></div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center" colspan="2">
+<div class="tbody"><span>POSSIBLE CAUSE</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Malfunction of ABS wheel-speed sensor(s)</div>
+<div class="list">•  Damaged ABS sensor rotor(s)</div>
+<div class="list">•  Incorrect clearance between ABS wheel-speed sensor and ABS sensor rotor</div>
+<div class="list">•  Poor installation of ABS wheel-speed sensor and/or ABS sensor rotor (If the sensor rotor is installed twisted, it may cause output of abnormal wave form at high speeds)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" colspan="4"><img src="images/am2zzw00004823.png"></td>
+</tr>
+</tbody>
+</table>
+</p>
+<p clear="all">
+<p class="table-title">Diagnostic procedure</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY IF CURRENT CONCERNED INPUT SIGNAL STATUS IS INTERMITTENT OR CONSTANT</div>
+<div class="list">•  Turn ignition key to OFF.</div>
+<div class="list">•  Connect WDS or equivalent to DLC-2.</div>
+<div class="list">•  Start engine and drive vehicle.</div>
+<div class="list">•  Access LF_WSPD, LR_WSPD, RF_WSPD and RR_WSPD using WDS or equivalent</div>
+<div class="list">•  Do vehicle speeds correspond approximately to the four PIDs above?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 3.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT ABS WHEEL-SPEED SENSOR CIRCUIT FOR SHORT TO GROUND</div>
+<div class="list">•  Turn ignition key to OFF.</div>
+<div class="list">•  Disconnect ABS HU/CM and ABS wheel-speed sensor connectors.</div>
+<div class="list">•  Inspect continuity between suspected sensor terminal(s) of ABS HU/CM connector (harness side) and ground(s).</div>
+<dl>
+<dd class="list">
+<div class="list">―  RF ABS wheel-speed sensor: Q—ground</div>
+<div class="list">―  LF ABS wheel-speed sensor: I—ground</div>
+<div class="list">―  RR ABS wheel-speed sensor: E—ground</div>
+<div class="list">―  LR ABS wheel-speed sensor: U—ground</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace harness for short to ground circuit between ABS HU/CM and ABS wheel-sped sensor, then go to Step 5.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT SENSOR ROTOR CLEARANCE</div>
+<div class="list">•  Jack-up vehicle and support it with safety stands.</div>
+<div class="list">•  Remove suspected wheel(s).</div>
+<div class="list">•  Inspect clearance between ABS wheel-speed sensor and sensor rotor.</div>
+<div class="list">•  Is clearance normal?</div>
+<dl>
+<div class="list-title">Clearance</div>
+<dd class="list">
+<div class="list"><span>Front: 1.88 mm {7.40 in} or less</span></div>
+<div class="list"><span>Rear: 1.9 mm {7.5 in} or less</span></div>
+</dd>
+</dl>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace ABS wheel-speed sensor(s), then go to Step 5.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT SENSOR ROTOR FOR DAMAGE</div>
+<div class="list">•  Jack-up vehicle and support it with safety stands.</div>
+<div class="list">•  Remove suspected wheel(s).</div>
+<div class="list">•  Visually inspect sensor rotor for missing and deformed.</div>
+<div class="list">•  Is sensor rotor normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace sensor rotor, then go to next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY TROUBLESHOOTING COMPLETED</div>
+<div class="list">•  Make sure to reconnect all disconnected connectors.</div>
+<div class="list">•  Clear DTC from memory.<div>(See <font class="extxref-label"><a href="id040200875600.html">ABS ON-BOARD DIAGNOSIS</a></font>.)</div>
+</div>
+<div class="list">•  Start engine and drive vehicle at <span>10 km/h {6.2 mph}</span> or above.</div>
+<div class="list">•  Gradually slow down vehicle and stop.</div>
+<div class="list">•  Is same DTC present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repeat the inspection from Step 1.</div>
+<div class="tbody">If the malfunction recurs, replace the ABS CM, then go to next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">6</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY AFTER REPAIR PROCEDURE</div>
+<div class="list">•  Is there any other DTC present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to applicable DTC inspection.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Troubleshooting completed.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

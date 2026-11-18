@@ -1,0 +1,338 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ON-BOARD DIAGNOSTIC SYSTEM FUNCTION</title>
+</head>
+<body><a name="id040200175100"></a><p class="servinfo-title"><span class="servinfo-head"></span>ON-BOARD DIAGNOSTIC SYSTEM FUNCTION</p>
+<hr>
+<p class="servinfo-title-id" align="right">id040200175100</p><br clear="all"><a name="id04020017510001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Malfunction Detection Function</p>
+<div class="list">•  The malfunction detection function detects malfunctions in the input/output signal system of the ABS HU/CM when the ignition switch is at the ON position.</div>
+<div class="list">•  When the ABS HU/CM are started up, the following malfunction detections are performed.</div>
+<dl>
+<dd class="list">
+<div class="list">―  The ABS and brake system warning lights illuminate for<span> approx. 3.0 s</span> when the ignition switch is turned to the ON position to inspect for open circuits in the lights. At the same time, the fail-safe relay is operated, and the input/output signals of each part is monitored for malfunction diagnosis. After starting to drive, the first time the vehicle speed is <span>approx. 10 km/h {6.2 mph} or more</span> the pump motor is operated and malfunction diagnosis is performed again. Input/output signals are monitored for malfunction determination when the ignition switch is at the ON position.</div>
+</dd>
+</dl>
+<div class="list">•  When malfunctions are detected, the corresponding lights are illuminated to alert the driver. Using the external tester communication function, DTCs can be output through the KLN of the DLC-2. At the same time, malfunction detection results are sent to the memory and fail-safe functions.</div><br clear="all"><a name="id04020017510002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Memory Function</p>
+<div class="list">•  The memory function stores DTCs of malfunctions in input/output signal systems. With this function, once a DTC is stored it is not cleared after the ignition switch has been turned off (LOCK position), even if the malfunctioning signal system has returned to normal.</div>
+<div class="list">•  Since the ABS control modules have built-in non-volatile memory, DTCs are not cleared even if the battery is removed. Therefore, it is necessary to clear the memory after performing repairs. Refer to the Workshop Manual for the DTC clearing procedure.</div><br clear="all"><a name="id04020017510003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Fail-safe Function</p>
+<div class="list">•  If a failure is detected in the self-diagnostic function, the fail-safe illuminates the ABS warning light and BRAKE system warning light to notify the driver. At the same time, the ABS HU/CM controls the ABS and EBD. The fail-safe function ensures normal braking even when ABS and EBD control stops, as shown in the table.</div>
+<dl>
+<dd>
+<div class="attention2-label">Caution</div>
+</dd>
+<dd>
+<div class="attention2">
+<div class="list">•  In the event that EBD control stops, the rear wheels may lock before the front wheels, causing the vehicle to skid. Inspect the system immediately if EBD control stops.</div>
+</div>
+</dd>
+</dl>
+<p clear="all">
+<p class="table-title">Fail-safe function table</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center" rowspan="3">
+<p class="thead">Malfunction location</p>
+</th>
+<th id="" align="center">
+<p class="thead">DTC</p>
+</th>
+<th id="" align="center" colspan="4">
+<p class="thead">Fail-safe function</p>
+</th>
+</tr>
+<tr>
+<th id="" align="center" rowspan="2">
+<p class="thead">WDS or equivalent</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">Warning light illumination condition</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">Control condition</p>
+</th>
+</tr>
+<tr>
+<th id="" align="center">
+<p class="thead">ABS warning light</p>
+</th>
+<th id="" align="center">
+<p class="thead">BRAKE system warning light (when parking brake is released)</p>
+</th>
+<th id="" align="center">
+<p class="thead">ABS control</p>
+</th>
+<th id="" align="center">
+<p class="thead">EBD control</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left" rowspan="3">
+<div class="tbody">Power supply</div>
+</td>
+<td id="" align="center">
+<div class="tbody">B1317</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not available</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not available</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">B1318</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated<sup>*1</sup></div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Not available</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not available<sup>*1</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Not illuminated<sup>*2</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Available<sup>*2</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ABS CM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">B1342</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not available</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not available</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Pump motor,</div>
+<div class="tbody">motor relay</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C1095</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not available</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Available</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="4">
+<div class="tbody">ABS sensor rotor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C1141</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">Illuminated<sup></sup></div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">Not illuminated <sup>*3</sup></div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">Not available</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">Available<sup>*4</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C1142</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C1143</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C1144</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="4">
+<div class="tbody">ABS wheel-speed sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C1145</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">Illuminated<sup></sup></div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">Not illuminated <sup>*3</sup></div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">Not available</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">Available<sup>*4</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C1155</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C1165</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C1175</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="4">
+<div class="tbody">ABS wheel-speed sensor/sensor rotor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C1233</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">Illuminated<sup></sup></div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">Not illuminated <sup>*3</sup></div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">Not available</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">Available<sup>*4</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C1234</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C1235</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C1236</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ABS CM internal failure</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C1267</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not available</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not available</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Brake light switch</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C1446</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Available</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Available</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">CAN communication</div>
+</td>
+<td id="" align="center">
+<div class="tbody">U2012</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Not illuminated<sup>*5</sup></div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Not illuminated<sup>*5</sup></div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Available</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Available</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2523</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :Detected if voltage is <span>8 V±0.5V or less</span>, regardless of duration.</div>
+<div class="deflist">*2  :Detected if voltage remains at <span>9.7 V±0.3V or less</span> for <span>210 ms or more</span>.</div>
+<div class="deflist">*3  :lluminates if two wheels or more have a malfunction.</div>
+<div class="deflist">*4  :Control not available if two wheels or more have a malfunction.</div>
+<div class="deflist">*5  :May illuminate depending on malfunction contents.</div>
+</body>
+</html>

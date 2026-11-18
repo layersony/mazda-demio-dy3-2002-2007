@@ -1,0 +1,507 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>MULTIPLEX COMMUNICATION SYSTEM</title>
+</head>
+<body><a name="id0902e6830400"></a><p class="servinfo-title"><span class="servinfo-head"></span>MULTIPLEX COMMUNICATION SYSTEM</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0902e6830400</p><br clear="all"><a name="id0902e683040001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  If the controller area network (CAN) system is malfunctioning, read the DTCs of the following modules, using the WDS or equivalent to determine the malfunctioning system.</div>
+<dl>
+<dd class="list">
+<div class="list">―  PCM</div>
+<div class="list">―  EPS control module</div>
+<div class="list">―  ABS HU/CM</div>
+<div class="list">―  Instrument cluster</div>
+</dd>
+</dl><br clear="all"><a name="id0902e683040002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Flowchart</p>
+<div class="list">•  Use the following flowchart to verify the cause of the trouble.</div>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT DTC INDICATION</div>
+<div class="list">•  Using the WDS or equivalent, inspect if DTCs are displayed for the following module: </div>
+<dl>
+<dd class="list">
+<div class="list">―  PCM</div>
+<div class="list">―  EPS control module</div>
+<div class="list">―  ABS HU/CM</div>
+<div class="list">―  Instrument cluster</div>
+</dd>
+</dl>
+<div class="list">•  Are any DTCs displayed?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 5.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT CAN SYSTEM-RELATED DTC</div>
+<div class="list">•  Are any DTCs other than the following displayed?</div>
+<dl>
+<dd class="list">
+<div class="list">―  U0073</div>
+<div class="list">―  U0100</div>
+<div class="list">―  U0121</div>
+<div class="list">―  U0155</div>
+<div class="list">―  U1900</div>
+<div class="list">―  U2012</div>
+<div class="list">―  U2023</div>
+<div class="list">―  U2516</div>
+<div class="list">―  U2522</div>
+<div class="list">―  U2523</div>
+</dd>
+</dl>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair the malfunctioning part by following the related DTC inspection.</div>
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT CAN SYSTEM-RELATED DTC</div>
+<div class="list">•  Are any of the following DTCs displayed?</div>
+<dl>
+<dd class="list">
+<div class="list">―  PCM: U0073, U0121, U0155</div>
+<div class="list">―  EPS control module: U0073, U0100</div>
+<div class="list">―  ABS HU/CM: U2012, U2522, U2523</div>
+<div class="list">―  Instrument cluster: U1900, U2516</div>
+</dd>
+</dl>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair the malfunctioning part by following the DTC inspection.</div>
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Troubleshooting completed.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY TROUBLESHOOTING COMPLETED</div>
+<div class="list">•  Clear the DTC from the CAN system-related modules using the WDS or equivalent.</div>
+<div class="list">•  Start the engine.</div>
+<div class="list">•  Are any of the CAN related DTCs displayed?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go back to Step 3.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Troubleshooting completed.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT COMMUNICATION CONDITION</div>
+<div class="list">•  Is there a response from the following modules?</div>
+<dl>
+<dd class="list">
+<div class="list">―  PCM</div>
+<div class="list">―  EPS control module</div>
+<div class="list">―  ABS HU/CM</div>
+<div class="list">―  Instrument cluster</div>
+</dd>
+</dl>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Troubleshooting completed.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">6</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT MODULES THAT DO NOT RESPOND</div>
+<div class="list">•  Inspect the power supply and the ground circuit for any units that do not respond.</div>
+<div class="list">•  Are they normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair the malfunctioning part, then go back to Step 1.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">7</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT CONNECTOR AND WIRING HARNESS BETWEEN MODULES THAT DO NOT RESPOND AND DLC-2</div>
+<div class="list">•  Turn the ignition switch to the LOCK position.</div>
+<div class="list">•  Inspect the wiring harness and connector between any module that does not respond and the DLC-2. </div>
+<dl>
+<div class="list-title">PCM—DLC-2</div>
+<dd class="list">
+<div class="list">―  1AE—F</div>
+<div class="list">―  1AI—E</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">EPS control module—DLC-2</div>
+<dd class="list">
+<div class="list">―  1L—F</div>
+<div class="list">―  1K—E</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">ABS HU/CM—DLC-2</div>
+<dd class="list">
+<div class="list">―  H—F</div>
+<div class="list">―  L—E</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">Instrument cluster—DLC-2</div>
+<dd class="list">
+<div class="list">―  2X—F</div>
+<div class="list">―  2W—E</div>
+</dd>
+</dl>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair the malfunctioning part, then go back to Step 1.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">8</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT WIRING HARNESS</div>
+<div class="list">•  Turn the ignition switch to the ON position (Engine off).</div>
+<div class="list">•  Measure the voltage between the following terminals.</div>
+<dl>
+<dd class="list">
+<div class="list">―  DLC-2 terminals F and GND</div>
+<div class="list">―  DLC-2 terminals E and GND</div>
+</dd>
+</dl>
+<div class="list">•  Is the voltage <span>2.0—3.0 V</span>?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 12.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">9</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT WIRING HARNESS</div>
+<div class="list">•  Turn the ignition switch to the LOCK position.</div>
+<div class="list">•  Measure the resistance between the following terminals.</div>
+<dl>
+<dd class="list">
+<div class="list">―  DLC-2 terminals F and E</div>
+</dd>
+</dl>
+<div class="list">•  Is the resistance <span>59—65 ohms</span>?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the modules that do not respond, then go back to Step 1.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">10</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT PCM</div>
+<div class="list">•  Disconnect the PCM connector.</div>
+<div class="list">•  Measure the resistance between following terminals.</div>
+<dl>
+<dd class="list">
+<div class="list">―  PCM terminals 1AE and 1AI (part-side)</div>
+</dd>
+</dl>
+<div class="list">•  Is the resistance <span>118—130 ohms</span>?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the PCM, then go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">11</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT INSTRUMENT CLUSTER</div>
+<div class="list">•  Disconnect the instrument cluster connector.</div>
+<div class="list">•  Measure the resistance between the following terminals.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Instrument cluster terminals 2X and 2W(part-side)</div>
+</dd>
+</dl>
+<div class="list">•  Is the resistance <span>118—130 ohms</span>?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the instrument cluster, then go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">12</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">CLASSIFY WIRING HARNESS MALFUNCTION OR MODULE MALFUNCTION</div>
+<div class="list">•  Turn the ignition switch to the LOCK position.</div>
+<div class="list">•  Disconnect the connector of any unit that does not respond. (If there are two or more units that do not respond, disconnect only one of the units.)</div>
+<div class="list">•  Turn the ignition switch to the ON position.</div>
+<div class="list">•  Measure the voltage between the following terminals.</div>
+<dl>
+<dd class="list">
+<div class="list">―  DLC-2 terminals F and GND</div>
+<div class="list">―  DLC-2 terminals E and GND</div>
+</dd>
+</dl>
+<div class="list">•  Is voltage <span>2.0—3.0 V</span>?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Retry this step with other module connector disconnected.</div>
+<div class="tbody">If all units that do not respond are disconnected, go to Step 14.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">13</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT WIRING HARNESS OF ANY UNIT THAT DOES NOT RESPOND</div>
+<div class="list">•  Turn the ignition switch to the LOCK position.</div>
+<div class="list">•  Inspect for continuity between the following connector terminals of any disconnected unit.</div>
+<dl>
+<div class="list-title">PCM—DLC-2</div>
+<dd class="list">
+<div class="list">―  1AE—other terminals</div>
+<div class="list">―  1AI—other terminals</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">EPS control module—DLC-2</div>
+<dd class="list">
+<div class="list">―  1L—other terminals</div>
+<div class="list">―  1K—other terminals</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">ABS HU/CM—DLC-2</div>
+<dd class="list">
+<div class="list">―  H—other terminals</div>
+<div class="list">―  L—other terminals</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">Instrument cluster—DLC-2</div>
+<dd class="list">
+<div class="list">―  2X—other terminals</div>
+<div class="list">―  2W—other terminals</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the wiring harness, then go back to Step 1.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the disconnected unit, then go back to Step 1.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">14</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT CAN RELATED WIRING HARNESS</div>
+<div class="list">•  Inspect the related wiring harnesses (CAN_L and/or CAN_H) for the short circuit (to power supply or ground).</div>
+<div class="list">•  Is the wiring harness normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the wiring harness, then go back to Step 1.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go back to Step 1.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

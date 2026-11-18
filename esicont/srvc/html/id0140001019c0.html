@@ -1,0 +1,1194 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.2.1206">
+    <meta name="TEMPLATEBASE" content="Simple HTML">
+    <meta name="LASTUPDATED" content="04/12/05 21:12:34">
+    <title>FUEL INJECTION CONTROL OPERATION [ZY]</title>
+  </head>
+
+  <body link="#3366CC" vlink="#9999CC" text="#000000" alink="#0000CC" bgcolor="#FFFFFF">
+<a name="wp1025486"> </a><h1><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="5"><b>
+FUEL INJECTION CONTROL OPERATION [ZY]
+</b></font></div></h1>
+<hr>
+
+<a name="wp1058563"> </a><p><div align="right"><font color="#000000" face="Arial" size="2">
+id0140001019c0
+</font></div></p>
+
+<a name="wp1061760"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Injection Timing
+</b></font></h2>
+
+<a name="wp1058573"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;There is synchronized fuel injection, which performs fuel injection by the setting of the crankshaft position, and non-synchronized fuel injection which performs fuel injection when the condition for fuel injection is met regardless of the crankshaft position.
+</font></div>
+
+<a name="wp1058588"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Synchronized fuel injection
+</b></font></h3>
+<dl>
+<a name="wp1058598"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The crankshaft rotation is synchronized by each intake and exhaust stroke of the cylinders, and fuel injection is performed by the fuel injection timing and the injection amount corresponding to the input signals of the following sensors.
+</font></dd>
+
+<a name="wp1058612"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	ECT sensor
+</font></dd>
+
+<a name="wp1058626"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	IAT sensor
+</font></dd>
+
+<a name="wp1058636"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	CKP sensor
+</font></dd>
+
+<a name="wp1058646"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	MAF sensor
+</font></dd>
+</dl>
+<a name="wp1058656"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Non-synchronized fuel injection
+</b></font></h3>
+<dl>
+<a name="wp1058667"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The crankshaft rotation is not synchronized and fuel injection is performed by the injection timing and injection amount as triggered by the input signals of the following sensors.
+</font></dd>
+
+<a name="wp1058681"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	ECT sensor
+</font></dd>
+
+<a name="wp1058695"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	IAT sensor
+</font></dd>
+
+<a name="wp1058705"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	TP sensor
+</font></dd>
+
+<a name="wp1058715"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	MAF sensor
+</font></dd>
+</dl>
+<a name="wp1058725"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Relation between synchronized and non-synchronized fuel injection
+</b></font></h3>
+<dl>
+<a name="wp1058736"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;If synchronized and non-synchronized fuel injection happen to occur together, fuel is injected by adding the fuel injection timing of both.
+</font></dd>
+</dl>
+<a name="wp1058751"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Injection time
+</b></font></h2>
+
+<a name="wp1058761"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM calculates the fuel injection amount according to the engine operation conditions as the fuel injection time and energizes the fuel injectors.
+</font></div>
+
+<a name="wp1058775"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Fuel injector energization time and operation conditions
+</b></font></h3>
+<dl>
+<a name="wp1058785"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The fuel injectors cause an operation delay with the start of energization from the PCM. The PCM calculates the fuel injection time by adding the non-injection time (ineffective injection time) to the actual injection time (effective injection time), and energizes the fuel injectors for this time.<br clear="all">
+<img src="images/DDA140ZT4878.png" align="left" height="290" width="334" border="0" hspace="0" vspace="0"><br clear="all">
+
+
+
+
+</font></dd>
+
+<a name="wp1058817"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The fuel injection time is based on the following formula:
+</font></dd>
+
+<a name="wp1058827"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+</font></dd>
+</dl>
+<a name="wp1058832"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>Fuel injection time = effective injection time + ineffective injection time</b>
+</font></p>
+<dl>
+<a name="wp1058846"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+</font></dd>
+</dl>
+<a name="wp1058851"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Ineffective injection time
+</b></font>
+<dl>
+<a name="wp1058861"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	The fuel injectors cause a delay in operation due to a delay in the build-up of operation current from coil inductance with the start of energization, and by the mass of the needle valve and plunger, and spring resistance. This delay is the ineffective injection time.
+</font></dd>
+
+<a name="wp1058872"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	The non-injection time is affected by the change in battery voltage. Accordingly, the PCM sets the non-injection time according to the battery voltage.
+</font></dd>
+</dl>
+<a name="wp1058884"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Effective injection time
+</b></font>
+<dl>
+<a name="wp1058894"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	The fuel injector opening valve time which is the actual fuel injection time is called the effective injection amount.
+</font></dd>
+</dl>
+<a name="wp1058904"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Determination of effective injection time
+</b></font></h2>
+
+<a name="wp1058914"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM divides the engine operation conditions into control zones according to engine speed and engine load and determines the effective injection time at each control zone to perform optimum air/fuel ratio control in all engine driving ranges.</font></div><p><img src="images/C3U0140S0152.png" height="248" width="644" border="0" hspace="0" vspace="0"></p><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+
+
+</font></div>
+
+<a name="wp1058957"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Start zone
+</b></font></h3>
+
+<a name="wp1058967"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Purpose
+</b></font>
+<dl>
+<a name="wp1058977"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Improved engine startability
+</font></dd>
+</dl>
+<a name="wp1058987"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Control condition
+</b></font>
+<dl>
+<a name="wp1058997"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When engine speed is 500 rpm or less.
+</font></dd>
+</dl>
+<a name="wp1059007"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Determination of fuel injection time
+</b></font>
+<dl>
+<a name="wp1059017"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Determined according to engine coolant temperature and engine speed.
+</font></dd>
+</dl>
+<a name="wp1059027"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Feedback Zone
+</b></font></h3>
+
+<a name="wp1059037"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Purpose
+</b></font>
+<dl>
+<a name="wp1059047"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Improved fuel economy
+</font></dd>
+
+<a name="wp1059057"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Improved exhaust gas purification
+</font></dd>
+</dl>
+<a name="wp1059067"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Control condition
+</b></font>
+<dl>
+<a name="wp1059077"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;During engine operation other than high load volume increase zone and engine start zone.
+</font></dd>
+</dl>
+<a name="wp1059087"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Determination of fuel injection time
+</b></font>
+<dl>
+<a name="wp1059097"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;During normal driving, the injection time is determined by the front and rear HO2S and sets to the theoretical air/fuel ratio.
+</font></dd>
+</dl>
+<a name="wp1059109"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+High load volume increase zone
+</b></font></h3>
+
+<a name="wp1059119"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Purpose
+</b></font>
+<dl>
+<a name="wp1059129"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Improved driveability
+</font></dd>
+</dl>
+<a name="wp1059139"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Control condition
+</b></font>
+<dl>
+<a name="wp1059149"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Either the engine speed, charging efficiency or throttle valve opening angle is a fixed value or more.
+</font></dd>
+</dl>
+<a name="wp1059159"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Determination of fuel injection time
+</b></font>
+<dl>
+<a name="wp1059169"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Corrections are added to the basic injection amount and the high load coefficient is calculated according to the engine speed, mass intake airflow amount and the throttle valve opening angle.
+</font></dd>
+</dl>
+<a name="wp1059179"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Excessive speed fuel cut zone
+</b></font></h3>
+
+<a name="wp1059189"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Purpose
+</b></font>
+<dl>
+<a name="wp1059199"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Engine protection
+</font></dd>
+</dl>
+<a name="wp1059209"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Control conditions
+</b></font>
+<dl>
+<a name="wp1059219"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Engine speed is approx. 6,500 rpm or more
+</font></dd>
+
+<a name="wp1059229"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When the following conditions continue for 2 min or more:
+</font></dd>
+
+<a name="wp1059239"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Vehicle is stopped.
+</font></dd>
+
+<a name="wp1059253"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Engine speed is 4,000 rpm or more.
+</font></dd>
+
+<a name="wp1059263"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Engine coolant temperature is 110&deg;C {230&deg;F} or more.
+</font></dd>
+<dl>
+<a name="wp1059281"> </a><dd><font color="Blue" face="Arial, Helvetica, sans-serif" size="3"><b>
+<b>Note</b>
+</b></font></dd>
+</dl></dl><dl>
+<a name="wp1061598"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM determines that the driver continues to unintentionally depress the accelerator pedal.
+</font></dd>
+</dl>
+<a name="wp1059299"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Determination of fuel injection time
+</b></font>
+<dl>
+<a name="wp1059309"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Fuel injection time is set to 0 (fuel cut).
+</font></dd>
+</dl>
+<a name="wp1059319"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Deceleration Fuel Cut Zone
+</b></font></h3>
+
+<a name="wp1059329"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Purpose
+</b></font>
+<dl>
+<a name="wp1059339"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Improved fuel economy
+</font></dd>
+
+<a name="wp1059349"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Prevents overheating of the catalytic converter
+</font></dd>
+</dl>
+<a name="wp1059359"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Control condition
+</b></font>
+<dl>
+<a name="wp1059369"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When the engine conditions are as follows (5 s or more after shifting the selector lever to other than P, N, or R, and 10 s or more after engine start):
+</font></dd>
+
+<a name="wp1059379"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Fully-closed throttle valve during deceleration (charging at fixed value or more)
+</font></dd>
+
+<a name="wp1059394"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	During driving under high load at engine speed of 1,000 rpm or more (mass airflow sensor normal)
+</font></dd>
+</dl>
+<a name="wp1059404"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Determination of fuel injection time method
+</b></font>
+<dl>
+<a name="wp1059414"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Fuel injection time is set to 0 (fuel cut).
+</font></dd>
+</dl>
+<a name="wp1059424"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Calculation method table for fuel injection time
+</b></font></h3>
+
+<a name="wp1059434"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+	(*: Fuel injection time base, x: Correction for fuel injection time)</font></div><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th colspan="3" rowspan="2">
+<a name="wp1059646"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Contents
+</b></font></div></p>
+
+<a name="wp1059935"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+(Fuel injection time, calculation method, or determination method)
+</b></font></div></p>
+</th>
+    <th colspan="5" rowspan="1">
+<a name="wp1059652"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Control zone
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="center">    <th>
+<a name="wp1059908"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+<img src="images/B3E0140T5703.png" height="43" width="29" border="0" hspace="0" vspace="0">
+
+
+
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059911"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+<img src="images/B3E0140T5714.png" height="66" width="29" border="0" hspace="0" vspace="0">
+
+
+
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059914"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+<img src="images/B3E0140T5725.png" height="143" width="29" border="0" hspace="0" vspace="0">
+
+
+
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059917"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+<img src="images/B3E0140T5736.png" height="140" width="29" border="0" hspace="0" vspace="0">
+
+
+
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059920"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+<img src="images/B3E0140T5747.png" height="120" width="29" border="0" hspace="0" vspace="0">
+
+
+
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="center">    <th colspan="2" rowspan="1">
+<a name="wp1060025"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Injection time at start
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1060031"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Set value according to engine coolant temperature (low engine coolant temperature&rarr;long injection time)
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1060034"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+*
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1060037"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+&#160;
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1060040"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+&#160;
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1060043"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+&#160;
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1060046"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+&#160;
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="center">    <th colspan="2" rowspan="1">
+<a name="wp1060089"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Basic injection time
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1060095"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Basic injection time = charging efficiency x fuel flow coefficient
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1060098"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+&#160;
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1060101"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+*
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1060104"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+*
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1060107"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+&#160;
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1060110"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+&#160;
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="center">    <th colspan="2" rowspan="1">
+<a name="wp1060156"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Fuel cut
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1060162"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Fuel injection time = 0
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1060165"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+&#160;
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1060168"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+&#160;
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1060171"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+&#160;
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1060174"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+*
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1060177"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+*
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="center">    <th colspan="2" rowspan="1">
+<a name="wp1060223"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Ineffective injection time
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1060229"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Set time according to injector performance
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1060232"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+*
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1060235"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+*
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1060238"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+*
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1060241"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+&#160;
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1060244"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+&#160;
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1059444"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Volume increase correction after engine start
+</font></div>
+</td>
+    <td>
+<a name="wp1059502"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Purpose: Maintains stability of engine speed just after engine start
+</font></div>
+
+<a name="wp1060301"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>Correction condition</b>
+</font></p>
+
+<a name="wp1060311"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Specified time according to engine coolant temperature directly after engine start
+</font></div>
+
+<a name="wp1060325"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>Correction amount</b>
+</font></p>
+
+<a name="wp1060335"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Low engine coolant temperature&rarr;large correction
+</font></div>
+
+<a name="wp1060349"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Low intake air temperature&rarr;large correction
+</font></div>
+</td>
+    <td>
+<a name="wp1059505"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+    <td>
+<a name="wp1059508"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&times;
+</font></div>
+</td>
+    <td>
+<a name="wp1059511"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+    <td>
+<a name="wp1059514"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+    <td>
+<a name="wp1059517"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1059699"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Front HO2S 
+</font></div>
+
+<a name="wp1060385"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Feedback correction
+</font></div>
+</td>
+    <td>
+<a name="wp1059705"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Purpose: Controls air/fuel ratio to theoretical air/fuel ratio
+</font></div>
+
+<a name="wp1060400"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>Correction condition</b>
+</font></p>
+
+<a name="wp1060410"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When engine coolant temperature is at set value or more.
+</font></div>
+
+<a name="wp1060424"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>Correction amount</b>
+</font></p>
+
+<a name="wp1060434"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Front HO2S electromotive force is approx. 0.45 V or more&rarr;volume decrease correction
+</font></div>
+
+<a name="wp1060448"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Front HO2S electromotive force is approx. 0.45 V or less&rarr;volume increase correction
+</font></div>
+</td>
+    <td>
+<a name="wp1059708"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+    <td>
+<a name="wp1059711"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&times;
+</font></div>
+</td>
+    <td>
+<a name="wp1059714"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+    <td>
+<a name="wp1059717"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+    <td>
+<a name="wp1059720"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1059724"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Rear HO2S 
+</font></div>
+
+<a name="wp1060484"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Feedback correction
+</font></div>
+</td>
+    <td>
+<a name="wp1059730"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Purpose: Corrects feedback amount according to deterioration of front HO2S and catalytic converter
+</font></div>
+
+<a name="wp1060495"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>Correction condition</b>
+</font></p>
+
+<a name="wp1060505"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When engine coolant temperature is at set value or more.
+</font></div>
+
+<a name="wp1060519"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Engine speed is 500-4,000 rpm.
+</font></div>
+
+<a name="wp1060531"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Charging efficiency is 9-90%.
+</font></div>
+
+<a name="wp1060545"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>Correction amount</b>
+</font></p>
+
+<a name="wp1060555"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;According to rear HO2S electromotive force&rarr;correction
+</font></div>
+</td>
+    <td>
+<a name="wp1059733"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+    <td>
+<a name="wp1059736"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&times;
+</font></div>
+</td>
+    <td>
+<a name="wp1059739"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+    <td>
+<a name="wp1059742"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+    <td>
+<a name="wp1059745"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1059749"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+D-range correction 
+</font></div>
+
+<a name="wp1060596"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(ATX)
+</font></div>
+</td>
+    <td>
+<a name="wp1059755"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Purpose: Ensures engine speed stability during D-range shifting
+</font></div>
+
+<a name="wp1060608"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>Correction condition</b>
+</font></p>
+
+<a name="wp1060618"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Throttle valve fully-closed and shifted into D range
+</font></div>
+
+<a name="wp1060633"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>Correction amount</b>
+</font></p>
+
+<a name="wp1060643"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Low engine coolant temperature&rarr;large correction
+</font></div>
+</td>
+    <td>
+<a name="wp1059758"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+    <td>
+<a name="wp1059761"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&times;
+</font></div>
+</td>
+    <td>
+<a name="wp1059764"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+    <td>
+<a name="wp1059767"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+    <td>
+<a name="wp1059770"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1059774"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+High load volume increase correction
+</font></div>
+</td>
+    <td>
+<a name="wp1059780"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Purpose: Improved engine output, decrease of exhaust gas temperature
+</font></div>
+
+<a name="wp1060688"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>Correction condition</b>
+</font></p>
+
+<a name="wp1060698"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;According to engine speed when the throttle valve opening angle is the fixed value or more, otherwise, according to engine speed and charging efficiency.
+</font></div>
+
+<a name="wp1060712"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>Correction amount</b>
+</font></p>
+
+<a name="wp1060722"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;High engine speed, high charging efficiency&rarr;large correction
+</font></div>
+</td>
+    <td>
+<a name="wp1059783"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+    <td>
+<a name="wp1059786"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+    <td>
+<a name="wp1059789"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&times;
+</font></div>
+</td>
+    <td>
+<a name="wp1059792"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+    <td>
+<a name="wp1059795"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1059799"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Warm-up volume increase correction
+</font></div>
+</td>
+    <td>
+<a name="wp1059805"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Purpose: When engine coolant temperature is low, maintains combustion stability
+</font></div>
+
+<a name="wp1060768"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>Correction condition</b>
+</font></p>
+
+<a name="wp1060778"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;While at set engine coolant temperature
+</font></div>
+
+<a name="wp1060792"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>Correction amount</b>
+</font></p>
+
+<a name="wp1060802"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;High charging efficiency, low engine coolant temperature&rarr;large correction
+</font></div>
+</td>
+    <td>
+<a name="wp1059808"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+    <td>
+<a name="wp1059811"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&times;
+</font></div>
+</td>
+    <td>
+<a name="wp1059814"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&times;
+</font></div>
+</td>
+    <td>
+<a name="wp1059817"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+    <td>
+<a name="wp1059820"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1059824"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Acceleration/deceleration volume increase correction
+</font></div>
+</td>
+    <td>
+<a name="wp1059830"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Purpose: Corrects fuel injection retard during acceleration/deceleration to ensure drive stability
+</font></div>
+
+<a name="wp1060852"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>Correction conditions</b>
+</font></p>
+
+<a name="wp1060862"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Acceleration/deceleration (change in amount of charging efficiency) is at set value or more.
+</font></div>
+
+<a name="wp1060878"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>Correction amount</b>
+</font></p>
+
+<a name="wp1060888"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Low engine coolant temperature&rarr;large correction
+</font></div>
+
+<a name="wp1060902"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Large acceleration/deceleration amount&rarr;large correction
+</font></div>
+</td>
+    <td>
+<a name="wp1059833"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+    <td>
+<a name="wp1059836"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&times;
+</font></div>
+</td>
+    <td>
+<a name="wp1059839"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&times;
+</font></div>
+</td>
+    <td>
+<a name="wp1059842"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+    <td>
+<a name="wp1059845"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1059849"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Deceleration volume increase correction
+</font></div>
+</td>
+    <td>
+<a name="wp1059855"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Purpose: Ensures stability of engine speed during recovery from fuel cut
+</font></div>
+
+<a name="wp1060946"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>Correction condition</b>
+</font></p>
+
+<a name="wp1060956"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Recovery from deceleration fuel cut
+</font></div>
+
+<a name="wp1060970"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>Correction amount</b>
+</font></p>
+
+<a name="wp1060980"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;High engine speed&rarr;small correction
+</font></div>
+</td>
+    <td>
+<a name="wp1059858"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+    <td>
+<a name="wp1059861"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&times;
+</font></div>
+</td>
+    <td>
+<a name="wp1059864"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+    <td>
+<a name="wp1059867"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+    <td>
+<a name="wp1059870"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1059874"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Learning correction
+</font></div>
+</td>
+    <td>
+<a name="wp1059880"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Purpose: Corrects deviation in air/fuel ratio from changes due to aged deterioration of mechanical devices
+</font></div>
+
+<a name="wp1061027"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>Correction condition</b>
+</font></p>
+
+<a name="wp1061037"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Under any condition except purge control
+</font></div>
+
+<a name="wp1061051"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>Correction amount</b>
+</font></p>
+
+<a name="wp1061061"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Learning value based on average of feedback correction value
+</font></div>
+</td>
+    <td>
+<a name="wp1059883"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+    <td>
+<a name="wp1059886"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&times;
+</font></div>
+</td>
+    <td>
+<a name="wp1059889"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&times;
+</font></div>
+</td>
+    <td>
+<a name="wp1059892"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+    <td>
+<a name="wp1059895"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></div>
+
+<a name="wp1061097"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Fuel Cut
+</b></font></h2>
+
+<a name="wp1061107"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Includes fuel cut under the following conditions except fuel cut at excessive engine speed according to engine operation and deceleration fuel cut.
+</font></div>
+
+<a name="wp1061121"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Vehicle Speed Limiter Fuel Cut
+</b></font></h3>
+
+<a name="wp1061131"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Purpose
+</b></font>
+<dl>
+<a name="wp1061141"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;To maintain the vehicle speed at 170 km/h {105 mph} or less
+</font></dd>
+
+<a name="wp1061157"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;To reduce the shock when the vehicle speed reaches 170 km/h {105 mph}
+</font></dd>
+
+<a name="wp1061172"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;To prevent a rise in the catalytic converter temperature at high speeds
+</font></dd>
+</dl>
+<a name="wp1061182"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Control Conditions
+</b></font>
+<dl>
+<a name="wp1061192"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When the actual vehicle speed exceeds 170 km/h {105 mph}
+</font></dd>
+</dl>
+<a name="wp1061207"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Excessive speed fuel cut
+</b></font></h3>
+
+<a name="wp1061217"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Purpose
+</b></font>
+<dl>
+<a name="wp1061227"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;To prevent excessive speed
+</font></dd>
+</dl>
+<a name="wp1061237"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Execution condition
+</b></font>
+<dl>
+<a name="wp1061247"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Engine speed 4,000 rpm or more and vehicle speed 170 km/h {105 mph}
+</font></dd>
+</dl>
+<a name="wp1061262"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Shift fuel cut (ATX)
+</b></font></h3>
+
+<a name="wp1061272"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Purpose
+</b></font>
+<dl>
+<a name="wp1061282"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;To reduces shift shock during shifting
+</font></dd>
+</dl>
+<a name="wp1061292"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Execution condition
+</b></font>
+<dl>
+<a name="wp1061302"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;During shifting (fuel cut of No.1 and No.4 cylinder)
+</font></dd>
+</dl>
+<a name="wp1061312"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Sensor damage fuel cut
+</b></font></h3>
+
+<a name="wp1061322"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Purpose
+</b></font>
+<dl>
+<a name="wp1061332"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;To prevent engine damage from abnormal ignition due to a malfunction input of a cylinder identification or the engine speed signal.
+</font></dd>
+</dl>
+<a name="wp1061342"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Execution condition
+</b></font>
+<dl>
+<a name="wp1061352"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;DTC stored for the following devices:
+</font></dd>
+
+<a name="wp1061362"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	CKP sensor
+</font></dd>
+
+<a name="wp1061376"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	CMP sensor
+</font></dd>
+</dl>
+<a name="wp1061386"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Dechoke Control
+</b></font></h3>
+
+<a name="wp1061396"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Purpose
+</b></font>
+<dl>
+<a name="wp1061406"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;To improve engine starting startability when spark plugs are flooded.
+</font></dd>
+</dl>
+<a name="wp1061416"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Execution condition
+</b></font>
+<dl>
+<a name="wp1061426"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When cranking close to fully-open throttle valve
+</font></dd>
+</dl>
+<a name="wp1061437"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Fuel Cut During Immobilizer System Activation
+</b></font></h3>
+
+<a name="wp1061447"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Purpose
+</b></font>
+<dl>
+<a name="wp1061457"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;To prevent vehicle theft
+</font></dd>
+</dl>
+<a name="wp1061467"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Execution conditions
+</b></font>
+<dl>
+<a name="wp1061477"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When an engine stop request signal is received from the immobilizer system, the PCM force-stops the fuel injectors. Therefore the engine stops.
+</font></dd>
+</dl>
+<a name="wp1061599"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ 
+</font></p>
+  </body>
+</html>

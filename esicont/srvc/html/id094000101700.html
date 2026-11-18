@@ -1,0 +1,382 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ON-BOARD DIAGNOSTIC FUNCTION</title>
+</head>
+<body><a name="id094000101700"></a><p class="servinfo-title"><span class="servinfo-head"></span>ON-BOARD DIAGNOSTIC FUNCTION</p>
+<hr>
+<p class="servinfo-title-id" align="right">id094000101700</p><br clear="all"><a name="id09400010170001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  The on-board diagnostic function is incorporated into the PCM, EPS control module, ABS HU/CM, and instrument cluster. This function can narrow down CAN system malfunction locations.</div>
+<div class="list">•  The on-board diagnostic function consists of the following functions: a failure detection function, which detects malfunctions in CAN system-related parts; a memory function, which stores detected DTCs; a self-malfunction diagnostic function, which indicates system malfunctions using DTCs and warning lights; and a PID/data monitoring function, which verifies the input/output condition of specific input/output signals being read out. </div>
+<div class="list">•  Using a WDS or equivalent, DTCs can be read out and deleted, and the PID/data monitoring function can be activated.</div>
+<div class="list">•  The CAN system has a fail-safe function. When a malfunction occurs in CAN system, the transmission module sends a warning signal and the receiving module illuminates the warning light.</div><br clear="all"><a name="id09400010170002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001550.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001550</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09400010170003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Failure detection function</p>
+<div class="list">•  The failure detection function in each CAN system-related module detects malfunctions in input/output signals.</div>
+<div class="list">•  This function outputs the DTC for the detected malfunction to the DLC-2, and also sends the detected result to the memory function and fail-safe function.</div><br clear="all"><a name="id09400010170004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Memory Function</p>
+<div class="list">•  The memory function stores the DTC for the malfunction of input/output signals for related parts, as determined by the failure detection function.</div><br clear="all"><a name="id09400010170005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Self-Malfunction Diagnostic Function</p>
+<div class="list">•  The self-malfunction diagnostic function determines that there is a malfunction, and outputs a signal, as a DTC, to the DLC-2. The DTC can be read out using a WDS or equivalent.</div><br clear="all"><p><a name="id09400010170006"></a><p class="topic-title"><span class="topic-head"></span>DTC table</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC</p>
+</th>
+<th id="" align="center">
+<p class="thead">Malfunction location</p>
+</th>
+<th id="" align="center">
+<p class="thead">DTC output module</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0073</div>
+</td>
+<td id="" align="left">
+<div class="tbody">CAN system communication error</div>
+</td>
+<td id="" align="left">
+<div class="list">•  PCM</div>
+<div class="list">•  EPS control module</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0100</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error to PCM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">EPS control module</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0121</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error to ABS HU/CM</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">PCM</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0155</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error to instrument cluster</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1900</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error to the other module</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2012</div>
+</td>
+<td id="" align="left">
+<div class="tbody">CAN system communication error</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ABS HU/CM (with ABS)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2023</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Abnormal message from PCM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">EPS control module</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2516</div>
+</td>
+<td id="" align="left">
+<div class="tbody">CAN system communication error</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2522</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error between the PCM and ABS HU/CM (Powertrain-related signal)</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">ABS HU/CM (with ABS)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2523</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error between the PCM and ABS HU/CM (Engine- related signal)</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p><br clear="all"><a name="id09400010170007"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>PID/Data Monitoring Function</p>
+<div class="list">•  The PID/data monitoring function is used to freely select and read out, in real time, the monitored items for the input/output signals of the ABS HU/CM and instrument cluster.</div>
+<div class="list">•  A WDS or equivalent is used to read out the PID/data monitor information.</div>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">PID name (definition)</p>
+</th>
+<th id="" align="center">
+<p class="thead">WDS display</p>
+</th>
+<th id="" align="center">
+<p class="thead">Detection state</p>
+</th>
+<th id="" align="center">
+<p class="thead">PID monitor module</p>
+</th>
+<th id="" align="center">
+<p class="thead">Terminal</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">ABS_MSG</div>
+<div class="tbody"> (Signal reception error from the ABS HU/CM)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Present</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Circuit between the ABS HU/CM and monitor module is normal.</div>
+</td>
+<td id="" align="left" rowspan="4">
+<div class="tbody">Instrument cluster</div>
+</td>
+<td id="" align="left" rowspan="4">
+<div class="tbody">Instrument cluster: </div>
+<div class="tbody">2W, 2X</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Not Present</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Circuit between the ABS HU/CM and monitor module is abnormal.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">PCM_MSG</div>
+<div class="tbody"> (Signal reception error from PCM)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Present</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Circuit between the PCM and monitor module is normal.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Not Present</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Circuit between the PCM and monitor module is abnormal.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id09400010170008"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Narrowing Down Malfunction Locations</p>
+<div class="list">•  The on-board diagnostic function can narrow down a CAN system malfunction location by verifying the detected DTC and PID/data monitor information from each module. Refer to the Self-Malfunction Diagnostic Function and PID/Data Monitoring Function for detailed information regarding DTCs and the PID/data monitor. (See <font class="intxref-label"><a href="#id09400010170005">Self-Malfunction Diagnostic Function</a></font>.) (See <font class="intxref-label"><a href="#id09400010170007">PID/Data Monitoring Function</a></font>.)</div><br clear="all"><p><a name="id09400010170009"></a><p class="topic-title"><span class="topic-head"></span>Flowchart</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001551.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001551</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id09400010170010"></a><p class="topic-title"><span class="topic-head"></span>Example (PCM-related communication error)</p>
+<p class="list">1.  DTCs for the PCM, ABS HU/CM and instrument cluster can be verified using a WDS or equivalent.</p>
+<p class="list">
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Module</p>
+</th>
+<th id="" align="center">
+<p class="thead">Displayed DTC</p>
+</th>
+<th id="" align="center">
+<p class="thead">Probable malfunction location</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left" rowspan="3">
+<div class="tbody">PCM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">U0073</div>
+</td>
+<td id="" align="left">
+<div class="tbody">PCM-related CAN system malfunction</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0121</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error between PCM and ABS HU/CM</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0155</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error between PCM and instrument cluster</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ABS HU/CM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">U2523</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error between PCM and ABS HU/CM</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Instrument cluster</div>
+</td>
+<td id="" align="left">
+<div class="tbody">U1900</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster-related CAN system malfunction</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p>
+<p class="list">2.   PID/data monitor information for the instrument cluster can be verified using a WDS or equivalent.</p>
+<p class="list">
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Module</p>
+</th>
+<th id="" align="center">
+<p class="thead">PID name (definition)</p>
+</th>
+<th id="" align="center">
+<p class="thead">Condition</p>
+</th>
+<th id="" align="center">
+<p class="thead">Probable malfunction point</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Instrument cluster</div>
+</td>
+<td id="" align="left">
+<div class="tbody">PCM_MSG</div>
+<div class="tbody"> (Missing message from the PCM)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not Present</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error between instrument cluster and PCM</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ABS_MSG</div>
+<div class="tbody"> (Missing message from the ABS HU/CM)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Present</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Normal communication between instrument cluster and ABS HU/CM</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001552.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001552</div>
+</td>
+</tr>
+</table>
+</p>
+<p class="list">3.  If there is a communication error between the ABS HU/CM and PCM, or between the instrument cluster and PCM, even if the communication between the ABS HU/CM and the instrument cluster is normal, it is probable that there is a malfunction in the PCM or PCM-related wiring harnesses.</p>
+<p class="list"></p>
+</p>
+</body>
+</html>

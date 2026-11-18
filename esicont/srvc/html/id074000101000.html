@@ -1,0 +1,129 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.2.1206">
+    <meta name="TEMPLATEBASE" content="Simple HTML">
+    <meta name="LASTUPDATED" content="04/12/05 21:14:17">
+    <title>MANUAL AIR CONDITIONER CONTROL SYSTEM</title>
+  </head>
+
+  <body link="#3366CC" vlink="#9999CC" text="#000000" alink="#0000CC" bgcolor="#FFFFFF">
+<a name="wp1025486"> </a><h1><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="5"><b>
+MANUAL AIR CONDITIONER CONTROL SYSTEM
+</b></font></div></h1>
+<hr>
+
+<a name="wp1058560"> </a><p><div align="right"><font color="#000000" face="Arial" size="2">
+id074000101000
+</font></div></p>
+
+<a name="wp1059542"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Block Diagram
+</b></font></h2>
+
+<a name="wp1058570"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The function of center panel has been included into the PCM.
+</font></div>
+
+<a name="wp1058584"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The evaporator temperature sensor sends a evaporator temperature signal to the PCM.
+</font></div>
+
+<a name="wp1058594"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The A/C switch and fan switch send an A/C signal to the PCM via the refrigerant pressure switch (HI and LO pressure).
+</font></div>
+
+<a name="wp1058608"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The refrigerant pressure switch (medium pressure) sends an idle-up signal to PCM.
+</font></div>
+
+<a name="wp1058619"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When the PCM receives those signals, it sends operating signals to the A/C relay and IAC valve based on A/C cut control and idle air control.
+</font></div>
+
+<a name="wp1058633"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><p><img src="images/DDA740ZT4108.png" height="344" width="644" border="0" hspace="0" vspace="0"></p><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+
+
+</font></p>
+
+<a name="wp1058650"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Outline of Control System
+</b></font></h2>
+
+<a name="wp1058660"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Manual air conditioner defroster control and A/C compressor control.
+</font></div>
+
+<a name="wp1058676"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th>
+<a name="wp1058737"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Control name
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058739"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Control part
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058679"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+A/C compressor control
+</font></div>
+</td>
+    <td>
+<a name="wp1058681"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Center panel
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1058792"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+A/C Compressor Control
+</b></font></h2>
+
+<a name="wp1058804"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The function of the center panel has been included into the PCM.
+</font></div>
+
+<a name="wp1058818"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When the PCM receives those signals, it sends operating signals to the A/C relay and IAC valve based on A/C cut control and idle air control.
+</font></div>
+
+<a name="wp1058832"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><p><img src="images/DDA740ZT40012.png" height="181" width="644" border="0" hspace="0" vspace="0"></p><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+
+
+</font></p>
+
+<a name="wp1058853"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+A/C signal on/off control
+</b></font></h3>
+<dl>
+<a name="wp1058867"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM turns the A/C signal (magnetic clutch) on and off based on the temperature of the air passing through the evaporator when the A/C and fan switches are on. This keeps the evaporator surface temperature within the specified range, preventing the evaporator from freezing while the fan switch and A/C switch are turned on.
+</font></dd>
+</dl>
+<a name="wp1058887"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><p><img src="images/ADA8540T0053.png" height="199" width="644" border="0" hspace="0" vspace="0"></p><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+
+
+</font></p>
+
+<a name="wp1059358"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ 
+</font></p>
+  </body>
+</html>

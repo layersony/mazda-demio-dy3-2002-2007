@@ -1,0 +1,249 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.2.1206">
+    <meta name="TEMPLATEBASE" content="Simple HTML">
+    <meta name="LASTUPDATED" content="04/13/05 11:12:10">
+    <title>SECURITY LIGHT: DTC 15 (WDS: DTC B1601)</title>
+  </head>
+
+  <body link="#3366CC" vlink="#9999CC" text="#000000" alink="#0000CC" bgcolor="#FFFFFF">
+<a name="wp1025486"> </a><h1><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="5"><b>
+SECURITY LIGHT: DTC 15 (WDS: DTC B1601)
+</b></font></div></h1>
+<hr>
+
+<a name="wp1058560"> </a><p><div align="right"><font color="#000000" face="Arial" size="2">
+id0902e4632600
+</font></div></p>
+
+<a name="wp1059409"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th>
+<a name="wp1058621"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+DTC 15 (B1601)
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058623"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+PCM received incorrect ID number from key (transponder).
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058563"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>POSSIBLE CAUSE</b>
+</font></p>
+</td>
+    <td>
+<a name="wp1058565"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;No keys have been registered after installation of new PCM
+</font></div>
+
+<a name="wp1058686"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Unregistered key detected
+</font></div>
+
+<a name="wp1058696"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Attempt made to register a ninth key
+</font></div>
+<dl>
+<a name="wp1058706"> </a><dd><font color="Blue" face="Arial, Helvetica, sans-serif" size="3"><b>
+<b>Note</b>
+</b></font></dd>
+</dl><dl>
+<a name="wp1059333"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;A maximum of only eight keys can be registered for a single vehicle.
+</font></dd>
+</dl>
+<a name="wp1058724"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Defective PCM
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1058734"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Diagnostic procedure</b></font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th>
+<a name="wp1058848"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Step
+</b></font></div></p>
+</th>
+    <th colspan="2" rowspan="1">
+<a name="wp1058850"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Inspection
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058854"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Action
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1058742"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1058744"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+VERIFY REGISTERED KEY IN PCM
+</b></font>
+
+<a name="wp1058956"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Check the following PID/DATA monitor using WDS: 
+</font></div>
+<dl>
+<a name="wp1058972"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	 NUMKEYS
+</font></dd>
+</dl>
+<a name="wp1058986"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Does NUMKEYS display more than 0?
+</font></div>
+</td>
+    <td>
+<a name="wp1058800"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Yes
+</font></div>
+</td>
+    <td>
+<a name="wp1058803"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Go to the next step.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058883"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+No
+</font></div>
+</td>
+    <td>
+<a name="wp1058886"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Go to Step 3.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1058890"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1058893"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+VERIFY REGISTERED KEY IN PCM
+</b></font>
+
+<a name="wp1059026"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Check the following PID/DATA monitor using WDS: 
+</font></div>
+<dl>
+<a name="wp1059042"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	 NUMKEYS
+</font></dd>
+</dl>
+<a name="wp1059056"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Does NUMKEYS display more than 8?
+</font></div>
+</td>
+    <td>
+<a name="wp1058896"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Yes
+</font></div>
+</td>
+    <td>
+<a name="wp1058899"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Erase key ID number using WDS and register key ID number.
+</font></div>
+
+<a name="wp1059084"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (See <a  href="id091400805000.html#wp1025486">IMMOBILIZER SYSTEM COMPONENT REPLACEMENT/KEY ADDITION AND CLEARING</a>.)
+</font></div>
+
+<a name="wp1059098"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Go to the next step.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058909"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+No
+</font></div>
+</td>
+    <td>
+<a name="wp1058912"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Go to the next step.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1058916"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+3
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1058919"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+INSPECT PCM
+</b></font>
+
+<a name="wp1059147"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Erase key ID number using WDS and register key ID number.
+</font></div>
+
+<a name="wp1059161"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (See <a  href="id091400805000.html#wp1025486">IMMOBILIZER SYSTEM COMPONENT REPLACEMENT/KEY ADDITION AND CLEARING</a>.)
+</font></div>
+
+<a name="wp1059175"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Using registered key, turn the ignition switch to the ON position.
+</font></div>
+
+<a name="wp1059185"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Does security light or WDS indicate DTC 15 (B1601) again?
+</font></div>
+</td>
+    <td>
+<a name="wp1058922"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Yes
+</font></div>
+</td>
+    <td>
+<a name="wp1058925"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Replace PCM and reprogram immobilizer system.
+</font></div>
+
+<a name="wp1059205"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (See <a  href="id091400805000.html#wp1025486">IMMOBILIZER SYSTEM COMPONENT REPLACEMENT/KEY ADDITION AND CLEARING</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059122"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+No
+</font></div>
+</td>
+    <td>
+<a name="wp1059125"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Troubleshooting is completed.
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+</b></font></p>
+
+<a name="wp1059334"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ 
+</font></p>
+  </body>
+</html>

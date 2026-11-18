@@ -1,0 +1,307 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.2.1206">
+    <meta name="TEMPLATEBASE" content="Simple HTML">
+    <meta name="LASTUPDATED" content="04/12/05 21:12:30">
+    <title>DRIVE-BY-WIRE CONTROL OPERATION [ZY]</title>
+  </head>
+
+  <body link="#3366CC" vlink="#9999CC" text="#000000" alink="#0000CC" bgcolor="#FFFFFF">
+<a name="wp1025486"> </a><h1><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="5"><b>
+DRIVE-BY-WIRE CONTROL OPERATION [ZY]
+</b></font></div></h1>
+<hr>
+
+<a name="wp1058565"> </a><p><div align="right"><font color="#000000" face="Arial" size="2">
+id0140001706c0
+</font></div></p>
+
+<a name="wp1059469"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Idle Speed Control
+</b></font></h2>
+
+<a name="wp1058575"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Controls the throttle valve opening angle so that it is close to the target idle speed calculated by the PCM.
+</font></div>
+
+<a name="wp1058589"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM calculates the target throttle opening angle by adding each type of correction to the basic duty value which is the basis of the throttle valve opening angle, and then sends a duty signal to the throttle valve actuator. The basic duty value is determined by the target engine speed.
+</font></div>
+
+<a name="wp1058599"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Each type of correction is as follows.
+</font></div>
+
+<a name="wp1058609"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Correction</b></font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th>
+<a name="wp1058723"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Correction
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058725"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Purpose
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058727"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Condition
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058729"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Amount of Correction
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058617"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Water temperature correction
+</font></div>
+</td>
+    <td>
+<a name="wp1058619"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Corrects changes in engine friction resistance based on changes in engine temperature.
+</font></div>
+</td>
+    <td>
+<a name="wp1058675"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Determines correction amount based on ECT.
+</font></div>
+</td>
+    <td>
+<a name="wp1058678"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Correction amount decreases as ECT increases.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058752"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Correction at engine start
+</font></div>
+</td>
+    <td>
+<a name="wp1058755"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Prevents idle speed dropping off after engine start.
+</font></div>
+</td>
+    <td>
+<a name="wp1058758"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Directly after cranking and engine-start.
+</font></div>
+</td>
+    <td>
+<a name="wp1058761"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Correction amount increases as ECT decreases.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058765"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Feedback correction
+</font></div>
+</td>
+    <td>
+<a name="wp1058768"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Performs feedback control so that idle speed is close to the target idle speed.
+</font></div>
+</td>
+    <td>
+<a name="wp1058771"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Executes feedback conditions when all of the following conditions are met:
+</font></div>
+<dl>
+<a name="wp1058890"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Vehicle stopped
+</font></dd>
+
+<a name="wp1058904"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	AP fully closed
+</font></dd>
+</dl></td>
+    <td>
+<a name="wp1058774"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Correction amount decreases when the idle speed is higher than the target idle speed.
+</font></div>
+
+<a name="wp1058927"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Correction amount increases when the idle speed is lower than the target idle speed.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058778"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Learning correction
+</font></div>
+</td>
+    <td>
+<a name="wp1058781"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Corrects air flow amount changes from changes in the engine due to aged deterioration such as engine friction resistance and air leakage from the throttle valve.
+</font></div>
+</td>
+    <td>
+<a name="wp1058784"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Determined by the amount of feedback correction when external load correction and purge control stop.
+</font></div>
+</td>
+    <td>
+<a name="wp1058787"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Learning correction executed when upper or lower limit of feedback correction exceeds the fixed value.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058791"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Purge correction
+</font></div>
+</td>
+    <td>
+<a name="wp1058794"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Increase in air from purge control is subtracted from the target throttle opening angle. Increases throttle valve opening angle to prevent rotation fluctuation from changes in air/fuel ratio when purge concentration is high.
+</font></div>
+</td>
+    <td>
+<a name="wp1058797"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Determined by the purge flow amount and purge concentration when purge control is executed.
+</font></div>
+</td>
+    <td>
+<a name="wp1058800"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Correction amount decreases as purge flow amount increases.
+</font></div>
+
+<a name="wp1058987"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Correction amount increases as purge flow concentration increases.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058999"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Load correction when vehicle accelerates from idle (MT)
+</font></div>
+</td>
+    <td>
+<a name="wp1059002"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Prevents engine speed drop after vehicle accelerates from idle.
+</font></div>
+</td>
+    <td>
+<a name="wp1059005"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+At acceleration from idle
+</font></div>
+</td>
+    <td>
+<a name="wp1059008"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+The amount of correction increases as the idle speed depression amount increases.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059032"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+External load correction
+</font></div>
+</td>
+    <td>
+<a name="wp1059035"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Prevents engine speed drop when the A/C and electrical load are operating.
+</font></div>
+
+<a name="wp1059067"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Prevents engine speed revving when the A/C and electrical load are off.
+</font></div>
+</td>
+    <td>
+<a name="wp1059038"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When any of the following signals are input:
+</font></div>
+<dl>
+<a name="wp1059092"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	A/C amplifier (A/C switch)
+</font></dd>
+
+<a name="wp1059110"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Refrigerant pressure switch (medium-pressure switch)
+</font></dd>
+
+<a name="wp1059121"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Generator current value
+</font></dd>
+</dl></td>
+    <td>
+<a name="wp1059041"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Correction amount increases as external load increases.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059134"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Fast idle up correction
+</font></div>
+</td>
+    <td>
+<a name="wp1059137"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Rapidly activates the catalytic converter after cold-engine start.
+</font></div>
+</td>
+    <td>
+<a name="wp1059140"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Synchronizes warm-up promotion spark retard correction for electric spark control. (See <a  href="id0140001795c0.html#wp1025486">ELECTRONIC SPARK ADVANCE (ESA) CONTROL OPERATION [ZY]</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1059143"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Correction amount increases as the ignition timing retard for the warm-up promotion spark retard correction of the ignition timing control advances.
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+</b></font></p>
+
+<a name="wp1059182"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Accelerator Control
+</b></font></h2>
+
+<a name="wp1059192"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Controls the throttle valve opening angle through control of the throttle valve actuator, according to the amount of AP depression.
+</font></div>
+
+<a name="wp1059206"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM controls the throttle valve actuator so that the actual throttle valve opening angle is close to the target throttle valve opening angle.
+</font></div>
+
+<a name="wp1059216"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The final throttle valve opening angle is determined by the sum of the target throttle opening angle during idling and the target throttle valve opening angle during regular driving.
+</font></div>
+
+<a name="wp1059226"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The target throttle valve opening angle during regular driving is determined based on the transmission gear position, the amount of AP depression and the engine speed. If the target throttle opening angle is at the fixed value or less during regular driving, the PCM switches to idle speed control.
+</font></div>
+
+<a name="wp1059236"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM sets the throttle valve to the fully-closed position when the ignition switch is on or off and executes the idle position learning function to learn the throttle valve position. Due to this, changes in the throttle valve opening angle due to age deterioration are corrected.
+</font></div>
+
+<a name="wp1059247"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When the ignition switch is off, a main relay on request is output and the fully-closed learning function is executed. (See <a  href="id0140001120c0.html#wp1025486">MAIN RELAY CONTROL OPERATION [ZY]</a>.)
+</font></div>
+
+<a name="wp1059266"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Traction Control
+</b></font></h2>
+
+<a name="wp1059276"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM calculates the target throttle valve opening angle by the torque down request signal from the TCM and the engine speed.
+</font></div>
+
+<a name="wp1059391"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ 
+</font></p>
+  </body>
+</html>
